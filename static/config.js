@@ -1,6 +1,6 @@
 (function () {
     var feedType = "json";
-    var feedPath = "/feed.php";
+    var feedPath = "//kokononine.moe/feed.php";
     var bgArr = [
         {
             "url": "//cdn.kokononine.moe/images/background_light.jpg",
