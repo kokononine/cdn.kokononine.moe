@@ -1,2 +1,2 @@
 # cdn.kokononine.moe
-kokononine's cdn.kokononine.moe CDN
+kokononine's site of cdn.kokononine.moe CDN
