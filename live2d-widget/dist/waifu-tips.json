@@ -1,7 +1,7 @@
 {
   "mouseover": [{
-    "selector": "a:not([href*='kokononine.moe'])",
-    "text": ["快看看这里都有什么呢～(≧▽≦)", "千万不要点击这里ねぷ～( ╹▽╹ )"]
+    "selector": ".spoiler-mask , .spoiler-mask-color , .spoiler-text , .spoiler-text-color , .spoiler-blur",
+    "text": ["你知道的太多了哦～(ㆁωㆁ)"]
   }, {
     "selector": "#waifu-tool-hitokoto",
     "text": ["猜猜我要说些什么？", "我从青蛙王子那里听到了不少人生经验。"]
@@ -25,25 +25,25 @@
     "text": ["到了要说再见的时候了嘛～", "呜呜 QAQ 后会有期……", "不要抛弃我呀……", "我们，还能再见面吗……", "哼，你会后悔的！"]
   }, {
     "selector": ".kokononine-blog-links-home",
-    "text": ["可以点击这里前往首页的说ねぷ～(｡･ω･｡)想回到上一页可以使用浏览器的后退功能的说ねぷ～", "点它就可以回到首页啦！(*´ω｀*)", "回首页看看叭ねぷ～(*´ω｀*)"]
+    "text": ["可以点击这里前往首页的说ねぷ～(｡･ω･｡)想回到上一页可以使用浏览器的后退功能的说ねぷ～", "点它就可以回到首页啦！(*´ω｀*)", "回首页看看叭喵ねぷ～(*´ω｀*)"]
   }, {
     "selector": ".kokononine-blog-links-about-me",
-    "text": ["你想知道我家主人是谁嘛～", "这里有一些关于我家主人的秘密哦，要不要看看呢～", "发现主人出没地点ねぷ～"]
+    "text": ["你想知道我家主人是谁嘛～", "这里有一些关于我家主人的秘密哦，要不要看看呢～", "发现主人出没地点的说ねぷ～"]
   }, {
     "selector": ".kokononine-blog-links-tags",
-    "text": ["点击就可以看文章的标签啦！", "点击来查看所有标签ねぷ～"]
+    "text": ["点击就可以看文章的标签啦！", "点击来查看所有标签的说ねぷ～"]
   }, {
     "selector": ".kokononine-blog-links-categories",
-    "text": ["文章都分类好啦～", "点击来查看文章分类ねぷ～"]
+    "text": ["文章都分类好啦～", "点击来查看文章分类的说ねぷ～"]
   }, {
     "selector": ".kokononine-blog-links-archive",
-    "text": ["翻页比较麻烦吗，那就来看看文章归档叭ねぷ～", "文章目录都整理在这里啦～"]
+    "text": ["翻页比较麻烦吗，那就来看看文章归档叭的说ねぷ～", "文章目录都整理在这里啦～"]
   }, {
     "selector": ".kokononine-blog-links-friends",
     "text": ["这是我的朋友们哦ヾ(◍°∇°◍)ﾉﾞ", "要去大佬们的家看看嘛～", "要去拜访一下我的朋友们嘛～"]
   }, {
     "selector": ".kokononine-blog-links-main-site",
-    "text": ["这是我家主人的主页ねぷ～"]
+    "text": ["这是我家主人的主页的说喵ねぷ～"]
   }, {
     "selector": ".kokononine-blog-links-board",
     "text": ["要给我家主人留言喵ねぷ～"]
@@ -61,7 +61,7 @@
     "text": ["这里可以使用 RSS 订阅呢！", "利用 feed 订阅器，就能快速知道博客有没有更新了呢～"]
   }, {
     "selector": ".kokononine-blog-links-cc-by-nc-sa",
-    "text": ["要记得规范转载ねぷ～", "所有文章均采用 CC BY-NC-SA 4.0 许可协议～", "转载前要先注意下文章的版权协议呢～"]
+    "text": ["要记得规范转载的说喵ねぷ～", "所有文章均采用 CC BY-NC-SA 4.0 许可协议～", "转载前要先注意下文章的版权协议呢～"]
   }, {
     "selector": ".links-of-author",
     "text": ["这里是主人的常驻地址哦～", "这里有主人的联系方式！"]
@@ -76,7 +76,7 @@
     "text": ["代码可以直接点击复制哟。"]
   }, {
     "selector": ".wp-code-block",
-    "text": ["这里是我家主人的codeねぷ～"]
+    "text": ["这里是我家主人的code的说喵ねぷ～"]
   }, {
     "selector": "a[href^='mailto']",
     "text": ["邮件我会及时回复的！", "点击就可以发送邮件啦～"]
@@ -87,7 +87,7 @@
     "selector": "a[href*='/categories']",
     "text": ["要去看看 <span>{text}</span> 分类么？", "点它可以查看此分类下的所有文章哟！"]
   }, {
-    "selector": ".post-title",
+    "selector": ".post-title , .archive-timeline-title > a",
     "text": ["要看看 <span>{text}</span> 这篇文章嘛(つ≧▽≦)つ～"]
   }, {
     "selector": "a[rel='contents']",
@@ -96,10 +96,10 @@
     "selector": "a[itemprop='discussionUrl']",
     "text": ["要去看看评论嘛～"]
   }, {
-    "selector": ".beian a",
+    "selector": ".beian",
     "text": ["我也是有户口的人哦～", "我的主人可是遵纪守法的好主人。"]
   }, {
-    "selector": ".container a[href^='http'], .nav-link .nav-text",
+    "selector": ".container a[href^='http'], .nav-link",
     "text": ["要去看看 <span>{text}</span> 么？", "去 <span>{text}</span> 逛逛叭～", "到 <span>{text}</span> 看看叭～"]
   }, {
     "selector": "#fabtn_back_to_top",
@@ -176,6 +176,9 @@
   }, {
     "selector": ".comment-item-text",
     "text": ["哇～快看看这个精彩评论！"]
+  }, {
+    "selector": "a:not([href*='kokononine.moe'])",
+    "text": ["快看看这里都有什么呢～(≧▽≦)", "千万不要点击这里ねぷ～( ╹▽╹ )"]
   }],
   "click": [{
     "selector": "#post_comment_content",
@@ -238,10 +241,10 @@
     "text": "你是夜猫子呀？这么晚还不睡觉，明天起的来嘛？"
   }],
   "message": {
-    "default": ["好久不见，日子过得好快喵ねぷ~", "要和Neptune酱一起摸鱼喵～", "来和Neptune酱一起玩叭～", "拿小拳拳锤你胸口ねぷ～", "记得把我家加入收藏夹哦！"],
+    "default": ["好久不见，日子过得好快喵的说喵ねぷ~", "要和Neptune酱一起摸鱼喵～", "来和Neptune酱一起玩叭～", "拿小拳拳锤你胸口喵ねぷ～", "记得把我家加入收藏夹哦！"],
     "console": "看到你打开console了哦，是想要看看我的小秘密嘛～",
-    "copy": "你都复制了些什么呀，转载要记得加上出处ねぷ～",
-    "visibilitychange": "哇，你终于回来了～",
+    "copy": "你都复制了些什么呀，转载要记得加上出处的说喵ねぷ～",
+    "visibilitychange": "哇，你终于回来啦～",
     "changeSuccess": "我的新衣服好看嘛？",
     "changeFail": "我还没有其他衣服呢！",
     "photo": "照好了嘛，是不是很可爱呢？",
@@ -259,6 +262,6 @@
       "https://cdn.kokononine.moe/live2d-widget/model/HyperdimensionNeptunia/nepnep/index.json",
       "https://cdn.kokononine.moe/live2d-widget/model/HyperdimensionNeptunia/nepswim/index.json"
     ],
-    "message": "紫耀之都的 Neptune ねぷ～"
+    "message": "紫耀之都的 Neptune 的说ねぷ～"
   }]
 }

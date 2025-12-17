@@ -56,14 +56,14 @@
 	font-size: 14px;
 	line-height: 24px;
 	margin: -30px 20px;
-	min-height: 70px;
+	min-height: 100px;
 	opacity: 0;
 	overflow: hidden;
 	padding: 5px 10px;
 	position: absolute;
 	text-overflow: ellipsis;
 	transition: opacity 1s;
-	width: 250px;
+	width: 400px;
 	word-break: break-all;
 }
 
@@ -78,9 +78,9 @@
 
 #live2d {
 	cursor: grab;
-	height: 300px;
+	height: 450px;
 	position: relative;
-	width: 300px;
+	width: 450px;
 }
 
 #live2d:active {
