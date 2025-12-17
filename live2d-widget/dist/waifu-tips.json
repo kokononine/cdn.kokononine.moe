@@ -75,17 +75,23 @@
     "selector": "a[href^='mailto']",
     "text": ["邮件我会及时回复的说喵呜ねぷ！", "点击就可以发送邮件啦的说喵呜ねぷ～～"]
   }, {
+    "selector": ".comment-author",
+    "text": ["这是评论发送者的名字的说喵呜ねぷ～"]
+  }, {
     "selector": "a:not([href*='kokononine.moe'])",
     "text": ["快看看这里都有什么喵呜～(≧▽≦)", "千万不要点击这里的说喵呜ねぷ～( ╹▽╹ )"]
-  }, {
-    "selector": "img",
-    "text": ["文章中的图片点击可以放大的说喵呜ねぷ！"]
   }, {
     "selector": ".hljs-control-copy",
     "text": ["代码可以直接点击复制的说喵呜ねぷ～"]
   }, {
-    "selector": ".wp-code-block",
+    "selector": ".wp-block-code",
     "text": ["这里是我家kokononine的code的说喵呜ねぷ～"]
+  }, {
+    "selector": ".comment-item-avatar",
+    "text": ["这是评论发送者的头像的说喵呜ねぷ～"]
+  }, {
+    "selector": "img",
+    "text": ["文章中的图片点击可以放大的说喵呜ねぷ！"]
   }, {
     "selector": "#navbar_search_container , .leftbar-search-button",
     "text": ["找不到想看的内容？搜索看看叭喵～", "在找什么东西呢，需要帮忙嘛喵～"]
@@ -169,7 +175,7 @@
     "text": ["想要去评论些什么嘛～", "要说点什么嘛～", "觉得blog不错的样子？快来留言和kokononine交流叭喵！", "评论之前要先看文章哦～"]
   }, {
     "selector": "#fabtn_toggle_blog_settings_popup",
-    "text": ["点它就可以设置夜间模式了哦！", "夜间觉得页面太亮的话可以在这里设置夜间模式哦～", "要修改blog显示样式嘛？"]
+    "text": ["点击它就可以设置夜间模式了哦！", "夜间觉得页面太亮的话可以在这里设置夜间模式哦～", "要修改blog显示样式嘛？"]
   }, {
     "selector": "#post_comment_name",
     "text": ["该怎么称呼你呢？", "留下你的尊姓大名！"]
@@ -195,20 +201,17 @@
     "selector": "#post_comment_send",
     "text": ["要对自己的发言负责哦～", "要提交了吗，请耐心等待回复哦～"]
   }, {
-    "selector": ".comment-item-avatar",
-    "text": ["这是评论发送者的头像的说喵呜ねぷ～"]
-  }, {
     "selector": ".comment-upvote",
     "text": ["要为这条评论点赞嘛～"]
-  }, {
-    "selector": ".comment-author",
-    "text": ["这是评论发送者的名字的说喵呜ねぷ～"]
   }, {
     "selector": ".comment-parent-info",
     "text": ["这是被回复的评论发送者的名字的说喵呜ねぷ～"]
   }, {
     "selector": ".comment-useragent",
     "text": ["这是评论发送者的设备信息的说喵呜ねぷ～"]
+  }, {
+    "selector": ".comment-edited",
+    "text": ["可以点击这里查看评论编辑记录的说喵呜ねぷ～"]
   }, {
     "selector": ".comment-time",
     "text": ["这是评论发送的时间的说喵呜ねぷ～"]
