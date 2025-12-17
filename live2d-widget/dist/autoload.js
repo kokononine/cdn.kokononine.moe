@@ -35,10 +35,11 @@ function loadExternalResource(url, type) {
 (async () => {
   // If you are concerned about display issues on mobile devices, you can use screen.width to determine whether to load
   // 如果担心手机上显示效果不佳，可以根据屏幕宽度来判断是否加载
-  // if (screen.width < 768) return;
+  if (screen.width < 768) return;
 
   // Avoid cross-origin issues with image resources
   // 避免图片资源跨域问题
+  /*
   const OriginalImage = window.Image;
   window.Image = function(...args) {
     const img = new OriginalImage(...args);
@@ -46,6 +47,7 @@ function loadExternalResource(url, type) {
     return img;
   };
   window.Image.prototype = OriginalImage.prototype;
+  */
   // Load waifu.css and waifu-tips.js
   // 加载 waifu.css 和 waifu-tips.js
   await Promise.all([
