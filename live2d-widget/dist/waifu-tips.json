@@ -1,7 +1,7 @@
 {
   "mouseover": [{
     "selector": ".spoiler-mask , .spoiler-mask-color , .spoiler-text , .spoiler-text-color , .spoiler-blur",
-    "text": ["你知道的太多了哦～(ㆁωㆁ)", "看到之后要假装不知道哦～(◡ ω ◡)"]
+    "text": ["你知道的太多了哦～(ㆁωㆁ)", "这种内容看到之后要假装不知道哦～(◡ ω ◡)"]
   }, {
     "selector": "#waifu-tool-hitokoto",
     "text": ["猜猜我要说些什么？", "我从青蛙王子那里听到了不少人生经验。"]
@@ -28,34 +28,28 @@
     "text": ["可以点击这里前往首页的说喵呜ねぷ～(｡･ω･｡)想回到上一页可以使用浏览器的后退功能的说喵呜ねぷ～", "点它就可以回到首页啦！(*´ω｀*)", "回首页看看叭喵呜ねぷ～(*´ω｀*)"]
   }, {
     "selector": ".kokononine-blog-links-about-me",
-    "text": ["你想知道我家主人是谁嘛～", "这里有一些关于我家主人的秘密哦，要不要看一看亚～", "发现主人出没地点的说喵呜ねぷ～"]
-  }, {
-    "selector": ".kokononine-blog-links-tags",
-    "text": ["点击就可以看文章的标签啦！", "点击来查看所有标签的说ねぷ～"]
-  }, {
-    "selector": ".kokononine-blog-links-categories",
-    "text": ["文章都分类好啦～", "点击来查看文章分类的说ねぷ～"]
-  }, {
-    "selector": ".kokononine-blog-links-archive",
-    "text": ["翻页比较麻烦吗，那就来看看文章归档叭的说喵呜ねぷ～", "文章目录都整理在这里啦～"]
+    "text": ["你想知道我家kokononine是谁嘛～", "这里有一些关于我家kokononine的秘密哦，要不要看一看亚～", "发现我家kokononine出没地点的说喵呜ねぷ～"]
   }, {
     "selector": ".kokononine-blog-links-friends",
     "text": ["这是我的朋友们哦ヾ(◍°∇°◍)ﾉﾞ", "要去大佬们的家看看嘛～", "要去拜访一下我的朋友们嘛～"]
   }, {
     "selector": ".kokononine-blog-links-main-site",
-    "text": ["这是我家主人的主页的说喵呜ねぷ～"]
+    "text": ["这是我家kokononine的主页的说喵呜ねぷ～"]
   }, {
     "selector": ".kokononine-blog-links-board",
-    "text": ["要给我家主人留言喵呜ねぷ～"]
+    "text": ["要给我家kokononine留言喵呜ねぷ～"]
   }, {
-    "selector": "#navbar_search_container",
-    "text": ["找不到想看的内容？搜索看看叭喵～", "在找什么东西呢，需要帮忙嘛喵～"]
+    "selector": ".kokononine-blog-links-tags , .site-state-tags",
+    "text": ["点击就可以看文章的标签啦！", "点击来查看所有标签的说ねぷ～"]
   }, {
-    "selector": "#leftbar_overview_author_image",
-    "text": ["我家主人好看嘛～", "这是我家主人哦(*´∇｀*)"]
+    "selector": ".kokononine-blog-links-categories , .site-state-categories",
+    "text": ["文章都分类好啦～", "点击来查看文章分类的说ねぷ～"]
   }, {
     "selector": ".site-state-posts",
     "text": ["要来看看所有的文章嘛～", "要不要点进去看看有什么亚？"]
+  }, {
+    "selector": ".kokononine-blog-links-archive",
+    "text": ["翻页比较麻烦吗，那就来看看文章归档叭的说喵呜ねぷ～", "文章目录都整理在这里啦～"]
   }, {
     "selector": ".kokononine-blog-links-rss-feed",
     "text": ["这里可以使用 RSS 订阅呢！", "利用 feed 订阅器，就能快速知道blog有没有更新了呢～"]
@@ -63,11 +57,20 @@
     "selector": ".kokononine-blog-links-cc-by-nc-sa",
     "text": ["要记得规范转载的说喵呜ねぷ～", "所有文章均采用 CC BY-NC-SA 4.0 许可协议的说喵呜ねぷ～", "转载前要先注意下文章的版权协议呢～"]
   }, {
-    "selector": ".links-of-author",
-    "text": ["这里是主人的常驻地址哦～", "这里有主人的联系方式的说喵呜ねぷ！"]
+    "selector": "a[href*='/tags']",
+    "text": ["要去看看 <span>{text}</span> 标签喵？", "点它可以查看此标签下的所有文章哟！"]
   }, {
-    "selector": ".followme",
-    "text": ["手机扫一下就能继续看，很方便呢～", "扫一扫，打开新世界的大门！"]
+    "selector": "a[href*='/categories']",
+    "text": ["要去看看 <span>{text}</span> 分类喵？", "点它可以查看此分类下的所有文章哟！"]
+  }, {
+    "selector": "a[href*='/author']",
+    "text": ["要去看看 <span>{text}</span> 的文章喵？", "点它可以查看作者的所有文章哟！"]
+  }, {
+    "selector": ".container a[href^='http'], .nav-link",
+    "text": ["要去看看 <span>{text}</span> 喵？", "去 <span>{text}</span> 逛逛叭喵～", "到 <span>{text}</span> 看看叭～"]
+  }, {
+    "selector": "a[href^='mailto']",
+    "text": ["邮件我会及时回复的说喵呜ねぷ！", "点击就可以发送邮件啦～"]
   }, {
     "selector": "img",
     "text": ["文章中的图片点击可以放大的说喵呜ねぷ！"]
@@ -76,82 +79,22 @@
     "text": ["代码可以直接点击复制哟。"]
   }, {
     "selector": ".wp-code-block",
-    "text": ["这里是我家主人的code的说喵呜ねぷ～"]
-  }, {
-    "selector": "a[href^='mailto']",
-    "text": ["邮件我会及时回复的说喵呜ねぷ！", "点击就可以发送邮件啦～"]
-  }, {
-    "selector": "a[href*='/tags']",
-    "text": ["要去看看 <span>{text}</span> 标签喵？", "点它可以查看此标签下的所有文章哟！"]
-  }, {
-    "selector": "a[href*='/categories']",
-    "text": ["要去看看 <span>{text}</span> 分类喵？", "点它可以查看此分类下的所有文章哟！"]
-  }, {
-    "selector": ".post-title , .archive-timeline-title > a",
-    "text": ["要看看 <span>{text}</span> 这篇文章嘛(つ≧▽≦)つ～"]
-  }, {
-    "selector": "a[rel='contents']",
-    "text": ["点击来阅读全文哦～"]
-  }, {
-    "selector": "a[itemprop='discussionUrl']",
-    "text": ["要去看看评论嘛～"]
-  }, {
-    "selector": ".beian",
-    "text": ["我也是有户口的人哦～", "我的主人可是遵纪守法的好主人。"]
-  }, {
-    "selector": ".container a[href^='http'], .nav-link",
-    "text": ["要去看看 <span>{text}</span> 喵？", "去 <span>{text}</span> 逛逛叭喵～", "到 <span>{text}</span> 看看叭～"]
-  }, {
-    "selector": "#fabtn_back_to_top",
-    "text": ["点它就可以回到顶部啦！", "又回到最初的起点～", "要回到开始的地方喵？"]
-  }, {
-    "selector": "#fabtn_toggle_blog_settings_popup",
-    "text": ["点它就可以设置夜间模式了哦！", "夜间觉得页面太亮的话可以在这里设置夜间模式哦～", "要修改显示blog嘛？"]
-  }, {
-    "selector": ".reward-container",
-    "text": ["我是不是棒棒哒～快给我点赞吧！", "要打赏我嘛？好期待啊～", "主人最近在吃土呢，很辛苦的样子，给他一些钱钱吧～"]
-  }, {
-    "selector": "#wechat",
-    "text": ["这是我的微信二维码～"]
-  }, {
-    "selector": "#alipay",
-    "text": ["这是我的支付宝哦！"]
-  }, {
-    "selector": "#bitcoin",
-    "text": ["这是我的比特币账号！"]
+    "text": ["这里是我家kokononine的code的说喵呜ねぷ～"]
   }, {
     "selector": "#share_show",
     "text": ["好东西要让更多人知道才行哦～", "觉得文章有帮助的话，可以分享给更多需要的朋友呢～"]
   }, {
-    "selector": ".need-share-button_weibo",
-    "text": ["微博？来分享一波喵！"]
+    "selector": "#fabtn_toggle_sides",
+    "text": ["不要把它移动到左面啊喂！", "不可以点击这个按钮的说喵呜ねぷ～", "这样的话我会被挡住的喵呜呜呜..."]
   }, {
-    "selector": ".need-share-button_wechat",
-    "text": ["分享到微信吧！"]
+    "selector": "#fabtn_back_to_top",
+    "text": ["点它就可以回到顶部啦！", "又回到最初的起点～", "要回到开始的地方喵？"]
   }, {
-    "selector": ".need-share-button_douban",
-    "text": ["分享到豆瓣好像也不错！"]
+    "selector": "#fabtn_go_to_comment",
+    "text": ["想要去评论些什么嘛～", "要说点什么嘛～", "觉得blog不错的样子？快来留言和kokononine交流叭喵！", "评论之前要先看文章哦～"]
   }, {
-    "selector": ".need-share-button_qqzone",
-    "text": ["QQ 空间，一键转发，耶～"]
-  }, {
-    "selector": ".need-share-button_twitter",
-    "text": ["Twitter？好像是不存在的东西？"]
-  }, {
-    "selector": ".need-share-button_facebook",
-    "text": ["emmm…FB 好像也是不存在的东西？"]
-  }, {
-    "selector": ".post-navigation-pre",
-    "text": ["来看看下一篇文章叭喵～", "点它可以看下一篇文章哦！", "要翻到下一篇文章嘛～"]
-  }, {
-    "selector": ".post-navigation-next",
-    "text": ["来看看上一篇文章叭喵～", "点它可以看上一篇文章哦！", "要翻到上一篇文章嘛～"]
-  }, {
-    "selector": ".extend.next",
-    "text": ["去下一页看看叭～", "点它可以前进哦！", "要翻到下一页嘛～"]
-  }, {
-    "selector": ".extend.prev",
-    "text": ["去上一页看看叭～", "点它可以后退哦！", "要翻到上一页嘛～"]
+    "selector": "#fabtn_toggle_blog_settings_popup",
+    "text": ["点它就可以设置夜间模式了哦！", "夜间觉得页面太亮的话可以在这里设置夜间模式哦～", "要修改blog显示样式嘛？"]
   }, {
     "selector": "#post_comment_name",
     "text": ["该怎么称呼你呢？", "留下你的尊姓大名！"]
@@ -162,11 +105,14 @@
     "selector": "#post_comment_link",
     "text": ["快快告诉我你的家在哪里，好让我去参观参观喵！"]
   }, {
-    "selector": "#fabtn_go_to_comment",
-    "text": ["想要去评论些什么嘛～", "要说点什么嘛～", "觉得blog不错？快来留言和主人交流叭喵！", "评论之前要先看文章哦～"]
-  }, {
     "selector": ".comment-post-use-markdown",
     "text": ["你会不会熟练使用 Markdown 亚？", "使用 Markdown 让评论更美观叭喵～"]
+  }, {
+    "selector": ".comment-post-privatemode",
+    "text": ["和kokononine说悄悄话的说喵呜ねぷ～", "专属于kokononine和你的秘密的说喵呜ねぷ～"]
+  }, {
+    "selector": ".comment-post-mailnotice",
+    "text": ["kokononine可以更及时的通知你的说喵呜ねぷ～", "要开启邮件提醒喵～"]
   }, {
     "selector": "#comment_emotion_btn",
     "text": ["要插入一个萌萌的表情嘛～", "可爱的评论要搭配可爱的表情哦～"]
@@ -180,8 +126,122 @@
     "selector": ".comment-item-text",
     "text": ["哇～这里有一枚可爱的喵喵的评论的说喵呜ねぷ！"]
   }, {
+    "selector": "#navbar_search_container , .leftbar-search-button",
+    "text": ["找不到想看的内容？搜索看看叭喵～", "在找什么东西呢，需要帮忙嘛喵～"]
+  }, {
+    "selector": "#leftbar_overview_author_image",
+    "text": ["我家kokononine好看嘛～", "这是我家kokononine哦(*´∇｀*)"]
+  }, {
+    "selector": "#leftbar_announcement",
+    "text": ["这里是kokononine向大家的宣言的说喵呜ねぷ～"]
+  }, {
+    "selector": "#leftbar_part1",
+    "text": ["这里也可以搜索文章的说喵呜ねぷ～"]
+  }, {
+    "selector": "#leftbar_part2",
+    "text": ["这里是kokononine's blog的概览的说喵呜ねぷ～"]
+  }, {
+    "selector": "#leftbar_tab_tools_btn",
+    "text": ["这里可以有blog的各种功能的说喵呜ねぷ～"]
+  }, {
+    "selector": ".post-navigation-pre",
+    "text": ["来看看下一篇文章叭喵～", "点它可以看下一篇文章哦！", "要翻到下一篇文章嘛～"]
+  }, {
+    "selector": ".post-navigation-next",
+    "text": ["来看看上一篇文章叭喵～", "点它可以看上一篇文章哦！", "要翻到上一篇文章嘛～"]
+  }, {
+    "selector": ".post-title , .archive-timeline-title > a",
+    "text": ["要看看 <span>{text}</span> 这篇文章嘛(つ≧▽≦)つ～"]
+  }, {
+    "selector": ".post-meta",
+    "text": ["这里是文章的统计信息的说喵呜ねぷ～"]
+  }, {
+    "selector": ".post-tags",
+    "text": ["这里是文章的所属标签的说喵呜ねぷ～"]
+  }, {
+    "selector": ".post-content",
+    "text": ["这里是文章的内容的说喵呜ねぷ～"]
+  }, {
+    "selector": ".post-preview",
+    "text": ["这里是文章的内容预览的说喵呜ねぷ～"]
+  }, {
+    "selector": ".post .post-full",
+    "text": ["这里是文章的内容的说喵呜ねぷ～"]
+  }, {
+    "selector": ".shuoshuo-title",
+    "text": ["这里是说说的标题的说喵呜ねぷ～"]
+  }, {
+    "selector": ".shuoshuo-preview-meta",
+    "text": ["这里是说说的统计信息的说喵呜ねぷ～"]
+  }, {
+    "selector": ".shuoshuo-content",
+    "text": ["这里是说说的内容的说喵呜ねぷ～"]
+  }, {
+    "selector": ".shuoshuo-preview-container , shuoshuo-container",
+    "text": ["这里是说说的内容预览的说喵呜ねぷ～"]
+  }, {
+    "selector": "#comment",
+    "text": ["这里是评论区的说喵呜ねぷ～"]
+  }, {
+    "selector": "#post_comment",
+    "text": ["这里是评论区的说喵呜ねぷ～"]
+  }, {
+    "selector": "#footer",
+    "text": ["这里是页面底部区域的说喵呜ねぷ～要留意版权协议并规范转载呢～"]
+  }, {
     "selector": "a:not([href*='kokononine.moe'])",
     "text": ["快看看这里都有什么呢～(≧▽≦)", "千万不要点击这里ねぷ～( ╹▽╹ )"]
+  }, {
+    "selector": ".links-of-author",
+    "text": ["这里是主人的常驻地址哦～", "这里有主人的联系方式的说喵呜ねぷ！"]
+  }, {
+    "selector": ".followme",
+    "text": ["手机扫一下就能继续看，很方便呢～", "扫一扫，打开新世界的大门！"]
+  }, {
+    "selector": ".extend.next",
+    "text": ["去下一页看看叭～", "点它可以前进哦！", "要翻到下一页嘛～"]
+  }, {
+    "selector": ".extend.prev",
+    "text": ["去上一页看看叭～", "点它可以后退哦！", "要翻到上一页嘛～"]
+  }, {
+    "selector": "a[rel='contents']",
+    "text": ["点击来阅读全文哦～"]
+  }, {
+    "selector": "a[itemprop='discussionUrl']",
+    "text": ["要去看看评论嘛～"]
+  }, {
+    "selector": ".beian",
+    "text": ["我也是有户口的人哦～", "我的主人可是遵纪守法的好主人。"]
+  }, {
+    "selector": ".reward-container",
+    "text": ["我是不是棒棒哒～快给我点赞叭！", "要打赏我嘛？好期待啊～", "主人最近在吃土呢，很辛苦的样子，给他一些钱钱叭～"]
+  }, {
+    "selector": "#wechat",
+    "text": ["这是我的微信二维码～"]
+  }, {
+    "selector": "#alipay",
+    "text": ["这是我的支付宝哦！"]
+  }, {
+    "selector": "#bitcoin",
+    "text": ["这是我的比特币账号！"]
+  }, {
+    "selector": ".need-share-button_weibo",
+    "text": ["微博？来分享一波喵！"]
+  }, {
+    "selector": ".need-share-button_wechat",
+    "text": ["分享到微信叭！"]
+  }, {
+    "selector": ".need-share-button_douban",
+    "text": ["分享到豆瓣好像也不错欸！"]
+  }, {
+    "selector": ".need-share-button_qqzone",
+    "text": ["QQ 空间，一键转发，耶～"]
+  }, {
+    "selector": ".need-share-button_twitter",
+    "text": ["Twitter？好像是不存在的东西欸？"]
+  }, {
+    "selector": ".need-share-button_facebook",
+    "text": ["emmm…FB 好像也是不存在的东西欸？"]
   }],
   "click": [{
     "selector": "#post_comment_content",
