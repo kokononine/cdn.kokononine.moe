@@ -195,7 +195,7 @@
     "selector": "#post_comment_send",
     "text": ["要对自己的发言负责哦～", "要提交了吗，请耐心等待回复哦～"]
   }, {
-    "selector": ".comment-item-avatar"",
+    "selector": ".comment-item-avatar",
     "text": ["这是评论发送者的头像的说喵呜ねぷ～"]
   }, {
     "selector": ".comment-upvote",
@@ -385,6 +385,6 @@
       "https://cdn.kokononine.moe/live2d-widget/model/HyperdimensionNeptunia/nepnep/index.json",
       "https://cdn.kokononine.moe/live2d-widget/model/HyperdimensionNeptunia/nepswim/index.json"
     ],
-    "message": "紫耀之都的 Neptune 的说喵呜ねぷ～"
+    "message": "Planeptune 紫耀之都的 Neptune 的说喵呜ねぷ～"
   }]
 }
