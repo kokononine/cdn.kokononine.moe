@@ -75,7 +75,7 @@
     "selector": "#navbar_search_container , .leftbar-search-button",
     "text": ["找不到想看的内容？搜索看看叭喵～", "在找什么东西呢，需要帮忙嘛喵～"]
   }, {
-    "selector": "#index-link",
+    "selector": ".index-link",
     "text": ["要来看看 <span>{text}</span> 这个章节嘛(つ≧▽≦)つ～"]
   }, {
     "selector": "#leftbar_tab_catalog_btn",
