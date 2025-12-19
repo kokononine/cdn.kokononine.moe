@@ -1,5 +1,5 @@
-if ($("#banner_logo_kokononine").length === 0) {
-    $("#banner_container > :first-child").prepend('<img src="//cdn.kokononine.moe/images/kokononine.svg" alt="kokononine" id="banner_logo_kokononine" style="width: 570px; height: 90px; display: block; margin-left: auto; margin-right: auto; max-width: 100%;">');
+if (document.querySelector("#banner_logo_kokononine") === null) {
+    document.querySelector("#banner_container > :first-child").insertAdjacentHTML("afterbegin", '<img src="//cdn.kokononine.moe/images/kokononine.svg" alt="kokononine" id="banner_logo_kokononine" style="width: 570px; height: 90px; display: block; margin-left: auto; margin-right: auto; max-width: 100%;">');
 }
 
 /*

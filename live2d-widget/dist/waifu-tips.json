@@ -1,7 +1,7 @@
 {
   "mouseover": [{
     "selector": ".spoiler-mask , .spoiler-mask-color , .spoiler-text , .spoiler-text-color , .spoiler-blur",
-    "text": ["你知道的太多了哦～(ㆁωㆁ)", "这种内容看过之后要假装不知道哦～(◡ ω ◡)"]
+    "text": ["你知道的太多了哦～(ㆁωㆁ)", "这样的内容看过之后要假装不知道哦～(◡ ω ◡)"]
   }, {
     "selector": "#waifu-tool-hitokoto",
     "text": ["猜猜我要说些什么亚？", "我从青蛙王子那里听到了不少人生经验呢～"]
@@ -30,14 +30,14 @@
     "selector": ".kokononine-blog-links-about-me",
     "text": ["你想知道我家kokononine是谁嘛～", "这里有一些关于我家kokononine的秘密哦，要不要来看一看亚～", "发现我家kokononine出没地点的说喵呜ねぷ～"]
   }, {
+    "selector": ".kokononine-blog-links-board",
+    "text": ["要给我家kokononine留言喵呜ねぷ～"]
+  }, {
     "selector": ".kokononine-blog-links-friends",
     "text": ["这是我的朋友们哦～ヾ(◍°∇°◍)ﾉﾞ", "要去大佬们的家看看嘛～", "要去拜访一下我的朋友们嘛～"]
   }, {
     "selector": ".kokononine-blog-links-main-site",
     "text": ["这是我家kokononine的主页的说喵呜ねぷ～"]
-  }, {
-    "selector": ".kokononine-blog-links-board",
-    "text": ["要给我家kokononine留言喵呜ねぷ～"]
   }, {
     "selector": ".kokononine-blog-links-tags , .site-state-tags",
     "text": ["点击就可以查看文章的标签啦！", "每一篇文章都有标签哦～", "点击来查看所有文章标签的说喵呜ねぷ～"]
@@ -72,95 +72,26 @@
     "selector": ".post-title , .archive-timeline-title > a",
     "text": ["要来看看 <span>{text}</span> 这篇文章嘛(つ≧▽≦)つ～"]
   }, {
-    "selector": "a[href^='mailto']",
-    "text": ["邮件我会及时回复的说喵呜ねぷ！", "点击就可以发送邮件啦的说喵呜ねぷ～～"]
-  }, {
-    "selector": ".comment-author",
-    "text": ["这是评论发送者的名字的说喵呜ねぷ～"]
-  }, {
-    "selector": "a:not([href*='kokononine.moe'])",
-    "text": ["快看看这里都有什么喵呜～(≧▽≦)", "千万不要点击这里的说喵呜ねぷ～( ╹▽╹ )"]
-  }, {
-    "selector": ".hljs-control-copy",
-    "text": ["代码可以直接点击复制的说喵呜ねぷ～"]
-  }, {
-    "selector": ".wp-block-code",
-    "text": ["这里是我家kokononine的code的说喵呜ねぷ～"]
-  }, {
-    "selector": ".comment-item-avatar",
-    "text": ["这是评论发送者的头像的说喵呜ねぷ～"]
-  }, {
-    "selector": "img",
-    "text": ["文章中的图片点击可以放大的说喵呜ねぷ！"]
-  }, {
     "selector": "#navbar_search_container , .leftbar-search-button",
     "text": ["找不到想看的内容？搜索看看叭喵～", "在找什么东西呢，需要帮忙嘛喵～"]
+  }, {
+    "selector": "#index-link",
+    "text": ["要来看看 <span>{text}</span> 这个章节嘛(つ≧▽≦)つ～"]
+  }, {
+    "selector": "#leftbar_tab_catalog_btn",
+    "text": ["这里有文章的目录的说喵呜ねぷ～"]
+  }, {
+    "selector": "#leftbar_tab_catalog",
+    "text": ["从这里就可以快速跳转到对应的章节了哦的说喵呜ねぷ～"]
+  }, {
+    "selector": "#leftbar_tab_overview_btn",
+    "text": ["这里是kokononine's blog的概览的说喵呜ねぷ～"]
   }, {
     "selector": "#leftbar_overview_author_image",
     "text": ["我家kokononine好看嘛～", "这是我家kokononine哦(*´∇｀*)"]
   }, {
-    "selector": "#leftbar_announcement",
-    "text": ["这里是kokononine向大家的宣言的说喵呜ねぷ～"]
-  }, {
-    "selector": "#leftbar_part1",
-    "text": ["这里也可以搜索文章的说喵呜ねぷ～"]
-  }, {
-    "selector": "#leftbar_part2",
-    "text": ["这里是kokononine's blog的概览的说喵呜ねぷ～"]
-  }, {
     "selector": "#leftbar_tab_tools_btn",
-    "text": ["这里可以有blog的各种功能的说喵呜ねぷ～"]
-  }, {
-    "selector": "#blog_tags",
-    "text": ["所有的文章标签都在这里啦的说喵呜ねぷ～"]
-  }, {
-    "selector": "#blog_categories",
-    "text": ["所有的文章分类都在这里啦的说喵呜ねぷ～"]
-  }, {
-    "selector": ".post-meta-detail-author",
-    "text": ["这里是文章的作者的说喵呜ねぷ～"]
-  }, {
-    "selector": ".post-meta-detail-time",
-    "text": ["这里是文章的发布时间的说，光标悬停之后会同时显示修改时间的说喵呜ねぷ～"]
-  }, {
-    "selector": ".post-meta-detail-views",
-    "text": ["这里是文章的累计阅读数量的说喵呜ねぷ～"]
-  }, {
-    "selector": ".post-meta-detail-comments",
-    "text": ["这里是文章的累积评论数量的说喵呜ねぷ～"]
-  }, {
-    "selector": ".post-meta-detail-categories",
-    "text": ["这里是文章的所属分类的说喵呜ねぷ～"]
-  }, {
-    "selector": ".post-meta-detail-words",
-    "text": ["这里是文章的字数和预计阅读时间的说喵呜ねぷ～"]
-  }, {
-    "selector": ".post-meta",
-    "text": ["这里是文章的统计信息的说喵呜ねぷ～"]
-  }, {
-    "selector": ".post-tags",
-    "text": ["这里是文章的所属标签的说喵呜ねぷ～"]
-  }, {
-    "selector": ".post-content",
-    "text": ["这里是文章的内容的说喵呜ねぷ～"]
-  }, {
-    "selector": ".post-preview",
-    "text": ["这里是文章的内容预览的说喵呜ねぷ～"]
-  }, {
-    "selector": ".post .post-full",
-    "text": ["这里是文章的内容的说喵呜ねぷ～"]
-  }, {
-    "selector": ".shuoshuo-title",
-    "text": ["这里是说说的标题的说喵呜ねぷ～"]
-  }, {
-    "selector": ".shuoshuo-preview-meta",
-    "text": ["这里是说说的统计信息的说喵呜ねぷ～"]
-  }, {
-    "selector": ".shuoshuo-content",
-    "text": ["这里是说说的内容的说喵呜ねぷ～"]
-  }, {
-    "selector": ".shuoshuo-preview-container , shuoshuo-container",
-    "text": ["这里是说说的内容预览的说喵呜ねぷ～"]
+    "text": ["这里有blog的各种功能的说喵呜ねぷ～"]
   }, {
     "selector": "#share_show",
     "text": ["好东西要让更多人知道才行哦～", "觉得文章有帮助的话，可以分享给更多需要的朋友呢～"]
@@ -176,6 +107,42 @@
   }, {
     "selector": "#fabtn_toggle_blog_settings_popup",
     "text": ["点击它就可以设置夜间模式了哦！", "夜间觉得页面太亮的话可以在这里设置夜间模式哦～", "要修改blog显示样式嘛？"]
+  }, {
+    "selector": ".comment-item-avatar",
+    "text": ["这是评论发送者的头像的说喵呜ねぷ～"]
+  }, {
+    "selector": ".comment-upvote",
+    "text": ["要为这条评论点赞嘛～"]
+  }, {
+    "selector": ".comment-author",
+    "text": ["这是评论发送者的名字的说喵呜ねぷ～"]
+  }, {
+    "selector": ".comment-parent-info",
+    "text": ["这是被回复的评论发送者的名字的说喵呜ねぷ～"]
+  }, {
+    "selector": ".comment-useragent",
+    "text": ["这是评论发送者的设备信息的说喵呜ねぷ～"]
+  }, {
+    "selector": ".comment-edited",
+    "text": ["可以点击这里查看评论编辑记录的说喵呜ねぷ～"]
+  }, {
+    "selector": ".comment-time",
+    "text": ["这是评论发送的时间的说喵呜ねぷ～"]
+  }, {
+    "selector": ".comment-info",
+    "text": ["这里是评论的附加信息的说喵呜ねぷ～"]
+  }, {
+    "selector": ".comment-pin",
+    "text": ["要置顶这条评论喵？"]
+  }, {
+    "selector": ".comment-edit",
+    "text": ["要编辑这条评论喵？"]
+  }, {
+    "selector": ".comment-reply",
+    "text": ["要回复这条评论喵？"]
+  }, {
+    "selector": "#post_comment_reply_cancel",
+    "text": ["要取消回复这条评论喵？"]
   }, {
     "selector": "#post_comment_name",
     "text": ["该怎么称呼你呢？", "留下你的尊姓大名！"]
@@ -201,44 +168,35 @@
     "selector": "#post_comment_send",
     "text": ["要对自己的发言负责哦～", "要提交了吗，请耐心等待回复哦～"]
   }, {
-    "selector": ".comment-upvote",
-    "text": ["要为这条评论点赞嘛～"]
+    "selector": ".post-meta-detail-author",
+    "text": ["这里是文章的作者的说喵呜ねぷ～"]
   }, {
-    "selector": ".comment-parent-info",
-    "text": ["这是被回复的评论发送者的名字的说喵呜ねぷ～"]
+    "selector": ".post-meta-detail-time",
+    "text": ["这里是文章的发布时间的说，光标悬停之后会同时显示修改时间的说喵呜ねぷ～"]
   }, {
-    "selector": ".comment-useragent",
-    "text": ["这是评论发送者的设备信息的说喵呜ねぷ～"]
+    "selector": ".post-meta-detail-views",
+    "text": ["这里是文章的累计阅读数量的说喵呜ねぷ～"]
   }, {
-    "selector": ".comment-edited",
-    "text": ["可以点击这里查看评论编辑记录的说喵呜ねぷ～"]
+    "selector": ".post-meta-detail-comments",
+    "text": ["这里是文章的累积评论数量的说喵呜ねぷ～"]
   }, {
-    "selector": ".comment-time",
-    "text": ["这是评论发送的时间的说喵呜ねぷ～"]
+    "selector": ".post-meta-detail-categories",
+    "text": ["这里是文章的所属分类的说喵呜ねぷ～"]
   }, {
-    "selector": ".comment-info",
-    "text": ["这里是评论的附加信息的说喵呜ねぷ～"]
+    "selector": ".post-meta-detail-words",
+    "text": ["这里是文章的字数和预计阅读时间的说喵呜ねぷ～"]
   }, {
-    "selector": ".comment-edit",
-    "text": ["要编辑这条评论喵？"]
+    "selector": ".post-meta",
+    "text": ["这里是文章的统计信息的说喵呜ねぷ～"]
   }, {
-    "selector": ".comment-reply",
-    "text": ["要回复这条评论喵？"]
+    "selector": ".post-tags",
+    "text": ["这里是文章的所属标签的说喵呜ねぷ～"]
   }, {
-    "selector": "#post_comment_reply_cancel",
-    "text": ["要取消回复这条评论喵？"]
+    "selector": ".shuoshuo-title",
+    "text": ["这里是说说的标题的说喵呜ねぷ～"]
   }, {
-    "selector": ".comment-item-text",
-    "text": ["哇～这里有一枚可爱的喵喵的评论的说喵呜ねぷ！"]
-  }, {
-    "selector": ".comment-item",
-    "text": ["哇～这里有一枚可爱的喵喵的评论的说喵呜ねぷ～"]
-  }, {
-    "selector": "#comment_edit_history",
-    "text": ["只有kokononine和你自己可以看到编辑记录的说喵呜ねぷ～"]
-  }, {
-    "selector": "#comment_pin_comfirm_dialog",
-    "text": ["只有站点管理员可以置顶评论的说喵呜ねぷ～"]
+    "selector": ".shuoshuo-preview-meta",
+    "text": ["这里是说说的统计信息的说喵呜ねぷ～"]
   }, {
     "selector": ".post-navigation-pre",
     "text": ["来看看下一篇文章叭喵～", "点它可以看下一篇文章哦！", "要翻到下一篇文章嘛～"]
@@ -246,8 +204,65 @@
     "selector": ".post-navigation-next",
     "text": ["来看看上一篇文章叭喵～", "点它可以看上一篇文章哦！", "要翻到上一篇文章嘛～"]
   }, {
+    "selector": "a[href^='mailto']",
+    "text": ["邮件我会及时回复的说喵呜ねぷ！", "点击就可以发送邮件啦的说喵呜ねぷ～～"]
+  }, {
+    "selector": "a:not([href*='kokononine.moe'])",
+    "text": ["快看看这里都有什么喵呜～(≧▽≦)", "千万不要点击这里的说喵呜ねぷ～( ╹▽╹ )"]
+  }, {
+    "selector": "img",
+    "text": ["文章中的图片点击可以放大的说喵呜ねぷ！"]
+  }, {
+    "selector": ".hljs-control-copy",
+    "text": ["代码可以直接点击复制的说喵呜ねぷ～"]
+  }, {
+    "selector": ".wp-block-code",
+    "text": ["这里是我家kokononine的code的说喵呜ねぷ～"]
+  }, {
+    "selector": "#leftbar_announcement",
+    "text": ["这里是kokononine向大家的宣言的说喵呜ねぷ～"]
+  }, {
+    "selector": "#leftbar_part1",
+    "text": ["这里也可以搜索文章的说喵呜ねぷ～"]
+  }, {
+    "selector": "#leftbar_part2",
+    "text": ["这里是kokononine's blog的概览的说喵呜ねぷ～"]
+  }, {
+    "selector": "#blog_tags",
+    "text": ["所有的文章标签都在这里啦的说喵呜ねぷ～"]
+  }, {
+    "selector": "#blog_categories",
+    "text": ["所有的文章分类都在这里啦的说喵呜ねぷ～"]
+  }, {
+    "selector": ".post-content",
+    "text": ["这里是文章的内容的说喵呜ねぷ～"]
+  }, {
+    "selector": ".post-preview",
+    "text": ["这里是文章的内容预览的说喵呜ねぷ～"]
+  }, {
+    "selector": ".post .post-full",
+    "text": ["这里是文章的内容的说喵呜ねぷ～"]
+  }, {
+    "selector": ".shuoshuo-content",
+    "text": ["这里是说说的内容的说喵呜ねぷ～"]
+  }, {
+    "selector": ".shuoshuo-preview-container , shuoshuo-container",
+    "text": ["这里是说说的内容预览的说喵呜ねぷ～"]
+  }, {
+    "selector": ".comment-item-text",
+    "text": ["哇～这里有一枚可爱的喵喵的评论的说喵呜ねぷ！"]
+  }, {
+    "selector": ".comment-item",
+    "text": ["哇～这里有一枚可爱的喵喵的评论的说喵呜ねぷ～"]
+  }, {
     "selector": "#comments",
     "text": ["这里是评论区的说喵呜ねぷ～"]
+  }, {
+    "selector": "#comment_edit_history",
+    "text": ["只有kokononine和你自己可以看到编辑记录的说喵呜ねぷ～"]
+  }, {
+    "selector": "#comment_pin_comfirm_dialog",
+    "text": ["只有站点管理员可以置顶评论的说喵呜ねぷ～"]
   }, {
     "selector": "#post_comment",
     "text": ["这里可以发送评论的说喵呜ねぷ～"]
