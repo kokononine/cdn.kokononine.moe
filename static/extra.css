@@ -22,13 +22,13 @@ code {
     font-family: 'JetBrains Mono', 'Open Sans', -apple-system, system-ui, BlinkMacSystemFont, 'Noto Sans SC', 'Kiwi Maru', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'SimSun', sans-serif, monospace !important;
 }
 
-.spoiler-mask {
+.kokononine-spoiler-mask {
     position: relative;
     display: inline-block;
     pointer-events: auto;
 }
 
-.spoiler-mask::after {
+.kokononine-spoiler-mask::after {
     content: '';
     position: absolute;
     top: 0;
@@ -36,68 +36,68 @@ code {
     width: 100%;
     height: 100%;
     background: #ff9fbf;
-    transition: opacity var(--spoiler-mask-delay) ease;
+    transition: opacity var(--kokononine-spoiler-mask-delay) ease;
 }
 
-.spoiler-mask:hover::after {
+.kokononine-spoiler-mask:hover::after {
     opacity: 0;
 }
 
-.spoiler-mask-color {
+.kokononine-spoiler-mask-color {
     position: relative;
     display: inline-block;
     pointer-events: auto;
 }
 
-.spoiler-mask-color::after {
+.kokononine-spoiler-mask-color::after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--spoiler-mask-color);
-    transition: opacity var(--spoiler-mask-color-delay) ease;
+    background: var(--kokononine-spoiler-mask-color);
+    transition: opacity var(--kokononine-spoiler-mask-color-delay) ease;
 }
 
-.spoiler-mask-color:hover::after {
+.kokononine-spoiler-mask-color:hover::after {
     opacity: 0;
 }
 
-.spoiler-text {
+.kokononine-spoiler-text {
     background-color: #ff9fbf;
     color: #ff9fbf;
     cursor: pointer;
-    transition: all var(--spoiler-text-delay) ease;
+    transition: all var(--kokononine-spoiler-text-delay) ease;
     pointer-events: auto;
 }
 
-.spoiler-text:hover {
+.kokononine-spoiler-text:hover {
     background-color: transparent;
     color: inherit;
 }
 
-.spoiler-text-color {
-    background-color: var(--spoiler-text-color);
-    color: var(--spoiler-text-color);
+.kokononine-spoiler-text-color {
+    background-color: var(--kokononine-spoiler-text-color);
+    color: var(--kokononine-spoiler-text-color);
     cursor: pointer;
-    transition: all var(--spoiler-text-color-delay) ease;
+    transition: all var(--kokononine-spoiler-text-color-delay) ease;
     pointer-events: auto;
 }
 
-.spoiler-text-color:hover {
+.kokononine-spoiler-text-color:hover {
     background-color: transparent;
     color: inherit;
 }
 
-.spoiler-blur {
+.kokononine-spoiler-blur {
     filter: blur(5px);
     opacity: 0.5;
-    transition: all var(--spoiler-blur-delay) ease;
+    transition: all var(--kokononine-spoiler-blur-delay) ease;
     pointer-events: auto;
 }
 
-.spoiler-blur:hover {
+.kokononine-spoiler-blur:hover {
     filter: none;
     opacity: 1;
 }
@@ -107,4 +107,53 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+}
+
+.kokononine-qoute-table {
+    display: table;
+    margin: auto;
+    background-color: transparent;
+    border: none;
+    border-collapse: collapse;
+}
+
+.kokononine-qoute-tr {
+    border: none;
+}
+
+.kokononine-qoute-td-begin {
+    border: none;
+    vertical-align: top;
+    text-align: left;
+    color: #ff9fbf;
+    font-size: 2rem;
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    padding: 10px 10px 10px 10px;
+    line-height: 100%
+}
+
+.kokononine-qoute-td-content {
+    border: none;
+    vertical-align: middle;
+    text-align: left;
+    padding: 1em;
+}
+
+.kokononine-qoute-td-end {
+    border: none;
+    vertical-align: bottom;
+    color: #ff9fbf;
+    font-size: 2rem;
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px 10px 10px 10px;
+    line-height: 100%
+}
+
+.kokononine-qoute-td-ref {
+    border: none;
+    text-align: right;
+    padding-right: 4%;
 }

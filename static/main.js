@@ -220,4 +220,4 @@ function Init(feedType, feedPath, bgArr, senArr) {
         selInd.style.transition = "";
     });
 }
-console.log("\n %c Present %c By Zapic \n\n", "color: #fff; background: #fb7299; padding:5px 0;", "background: #efefef; padding:5px 0;");
+//console.log("\n %c Present %c By Zapic \n\n", "color: #fff; background: #fb7299; padding:5px 0;", "background: #efefef; padding:5px 0;");
