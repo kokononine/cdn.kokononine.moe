@@ -1,6 +1,6 @@
 {
   "mouseover": [{
-    "selector": ".spoiler-mask , .spoiler-text , .spoiler-blur",
+    "selector": ".kokononine-spoiler-mask , .kokononine-spoiler-text , .kokononine-spoiler-blur",
     "text": ["你知道的太多了哦～OvO", "这样的内容看过之后要假装不知道哦～OwO"]
   }, {
     "selector": "#waifu-tool-hitokoto",
