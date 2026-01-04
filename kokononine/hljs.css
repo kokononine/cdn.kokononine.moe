@@ -1,0 +1,29 @@
+.hljs-ln-numbers {
+    /*
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    vertical-align: top;
+    padding-right: 12px !important;
+    position: absolute;
+    left: 20px;
+    width: 30px;
+    overflow-x: visible !important;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    */
+    position: sticky !important;
+    left: 0px !important;
+}
+
+.hljs-ln-code {
+    /*
+    padding-left: 30px !important;
+    transition: all 0.3s ease;
+    */
+    padding-left: 0px !important;
+}

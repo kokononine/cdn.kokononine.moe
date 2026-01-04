@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,300..800;1,300..800&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');*/
+
+:root {
+    --kokononine-font-system: -apple-system, system-ui, BlinkMacSystemFont;
+    --kokononine-font-fallback: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'SimSun', sans-serif, monospace;
+    --kokononine-font-english-code: 'JetBrains Mono';
+    --kokononine-font-english: 'Comfortaa' /*, 'Quicksand', 'Open Sans', 'Google Sans'*/ ;
+    --kokononine-font-simplified-chinese: 'Noto Sans SC';
+    --kokononine-font-japanese: 'Kiwi Maru';
+    --kokononine-font-cjk: var(--kokononine-font-simplified-chinese), var(--kokononine-font-japanese);
+    --kokononine-font-stack-body: var(--kokononine-font-english), var(--kokononine-font-system), var(--kokononine-font-simplified-chinese), var(--kokononine-font-japanese), var(--kokononine-font-fallback);
+    --kokononine-font-stack-code: var(--kokononine-font-english-code), var(--kokononine-font-stack-body);
+    --kokononine-font-stack-japanese: var(--kokononine-font-english), var(--kokononine-font-japanese), var(--kokononine-font-system), var(--kokononine-font-simplified-chinese), var(--kokononine-font-fallback);
+}
+
+body {
+    font-family: var(--kokononine-font-stack-body) !important;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+code,
+pre {
+    font-family: var(--kokononine-font-stack-code) !important;
+}
+
+:lang(ja),
+[lang|='ja'] {
+    font-family: var(--kokononine-font-stack-japanese) !important;
+}
