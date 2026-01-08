@@ -17,7 +17,9 @@
     position: fixed;
 }
 
-.loading-indicator, .fixed-layer, .self-avatar {
+.loading-indicator,
+.fixed-layer,
+.self-avatar {
     top: 0;
     left: 0;
 }
@@ -117,10 +119,12 @@
         transform: rotate(0);
         stroke-dashoffset: 345;
     }
+
     50% {
         transform: rotate(0);
         stroke-dashoffset: 81;
     }
+
     100% {
         stroke-dashoffset: 345;
         transform: rotate(270deg);
@@ -132,15 +136,19 @@
     0% {
         transform: rotate(360deg);
     }
+
     25% {
         transform: rotate(270deg);
     }
+
     50% {
         transform: rotate(180deg);
     }
+
     75% {
         transform: rotate(90deg);
     }
+
     100% {
         transform: rotate(0deg);
     }
@@ -150,6 +158,7 @@
     0% {
         transform: rotate(0);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -177,12 +186,16 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    body, .loading-mask {
+
+    body,
+    .loading-mask {
         background-color: #333;
     }
+
     .loading-text {
         color: #ddd;
     }
+
     .loading-indicator .circle-line {
         stroke: #ff9fbf;
     }
