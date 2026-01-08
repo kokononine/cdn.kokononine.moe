@@ -402,9 +402,9 @@
   "models": [{
     "name": "HyperdimensionNeptunia",
     "paths": [
-      "https://cdn.kokononine.moe/live2d-widget/model/HyperdimensionNeptunia/neptune_classic/index.json",
       "https://cdn.kokononine.moe/live2d-widget/model/HyperdimensionNeptunia/nepnep/index.json",
-      "https://cdn.kokononine.moe/live2d-widget/model/HyperdimensionNeptunia/nepswim/index.json"
+      "https://cdn.kokononine.moe/live2d-widget/model/HyperdimensionNeptunia/nepswim/index.json",
+      "https://cdn.kokononine.moe/live2d-widget/model/HyperdimensionNeptunia/neptune_classic/index.json"
     ],
     "message": "Planeptune 紫耀之都的 Neptune 的说喵呜ねぷ～"
   }]

@@ -50,8 +50,16 @@
     opacity: 1;
 }
 
-.kokononine-qoute-table-table,
 .kokononine-qoute-table {
+    display: table;
+    margin: auto;
+    border: none;
+    border-collapse: collapse;
+    background-color: transparent;
+}
+
+.kokononine-qoute-table-table,
+.kokononine-qoute-table table {
     display: table;
     margin: auto;
     border: none;
@@ -65,8 +73,8 @@
 }
 
 .kokononine-qoute-table-td-begin,
-.kokononine-qoute-table tr:only-child td:first-child:not(:last-child),
-.kokononine-qoute-table tr:not(:last-child) td:first-child:not(:last-child) {
+.kokononine-qoute-table tr:only-child > td:first-child:not(:last-child),
+.kokononine-qoute-table tr:not(:last-child) > td:first-child:not(:last-child) {
     border: none;
     text-align: left;
     vertical-align: top;
@@ -79,10 +87,10 @@
 }
 
 .kokononine-qoute-table-td-content,
-.kokononine-qoute-table tr:only-child td:only-child,
-.kokononine-qoute-table tr:not(:last-child) td:only-child,
-.kokononine-qoute-table tr:only-child td:not(:first-child):not(:last-child),
-.kokononine-qoute-table tr:not(:last-child) td:not(:first-child):not(:last-child) {
+.kokononine-qoute-table tr:only-child > td:only-child,
+.kokononine-qoute-table tr:not(:last-child) > td:only-child,
+.kokononine-qoute-table tr:only-child > td:not(:first-child):not(:last-child),
+.kokononine-qoute-table tr:not(:last-child) > td:not(:first-child):not(:last-child) {
     border: none;
     text-align: left;
     vertical-align: middle;
@@ -90,8 +98,8 @@
 }
 
 .kokononine-qoute-table-td-end,
-.kokononine-qoute-table tr:only-child td:last-child:not(:first-child),
-.kokononine-qoute-table tr:not(:last-child) td:last-child:not(:first-child) {
+.kokononine-qoute-table tr:only-child > td:last-child:not(:first-child),
+.kokononine-qoute-table tr:not(:last-child) > td:last-child:not(:first-child) {
     border: none;
     text-align: left;
     vertical-align: bottom;
@@ -104,7 +112,7 @@
 }
 
 .kokononine-qoute-table-td-ref,
-.kokononine-qoute-table tr:last-child:not(:only-child) td {
+.kokononine-qoute-table tr:last-child:not(:only-child) > td {
     border: none;
     text-align: right;
     padding-right: 4%;
