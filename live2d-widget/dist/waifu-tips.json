@@ -78,29 +78,29 @@
         {
             "selector": ".kokononine-blog-links-about-me",
             "text": [
-                "你想知道我家kokononine是谁嘛～",
-                "这里有一些关于我家kokononine的秘密哦，要不要来看一看亚～",
-                "发现我家kokononine出没地点的说喵呜ねぷ～"
+                "你想知道我家kokononine酱是谁嘛～",
+                "这里有一些关于我家kokononine酱的秘密哦，要不要来看一看亚～",
+                "发现我家kokononine酱出没地点的说喵呜ねぷ～"
             ]
         },
         {
             "selector": ".kokononine-blog-links-board",
             "text": [
-                "要给我家kokononine留言喵呜ねぷ～"
+                "要给我家kokononine酱留言喵呜ねぷ～"
             ]
         },
         {
             "selector": ".kokononine-blog-links-friends",
             "text": [
                 "这是我的朋友们哦～ヾ(◍°∇°◍)ﾉﾞ",
-                "要去大佬们的家看看嘛～",
+                "要去小伙伴们的家看看嘛～",
                 "要去拜访一下我的朋友们嘛～"
             ]
         },
         {
             "selector": ".kokononine-blog-links-main-site",
             "text": [
-                "这是我家kokononine的主页的说喵呜ねぷ～"
+                "这是我家kokononine酱的主页的说喵呜ねぷ～"
             ]
         },
         {
@@ -131,6 +131,13 @@
             "text": [
                 "翻页比较麻烦吗，那就来看看文章归档叭的说喵呜ねぷ～",
                 "文章目录都整理在这里啦～"
+            ]
+        },
+        {
+            "selector": ".kokononine-blog-links-shuoshuo",
+            "text": [
+                "这里是主人的日记的说喵呜ねぷ～",
+                "听说这里有主人的各种记录的说喵呜ねぷ～"
             ]
         },
         {
@@ -217,8 +224,8 @@
         {
             "selector": "#leftbar_overview_author_image",
             "text": [
-                "我家kokononine好看嘛～(◡ ω ◡)",
-                "这是我家kokononine哦(*´∇｀*)"
+                "我家kokononine酱好看嘛～(◡ ω ◡)",
+                "这是我家kokononine酱哦(*´∇｀*)"
             ]
         },
         {
@@ -255,8 +262,15 @@
             "text": [
                 "想要去评论些什么嘛～",
                 "要说点什么嘛～",
-                "觉得blog不错的样子？快来留言和kokononine交流叭喵！",
+                "觉得blog不错的样子？快来留言和kokononine酱交流叭喵！",
                 "评论之前要先看文章哦～"
+            ]
+        },
+        {
+            "selector": "#fabtn_toggle_darkmode",
+            "text": [
+                "点击它就可以设置夜间模式了哦！",
+                "夜间觉得页面太亮的话可以在这里设置夜间模式哦～"
             ]
         },
         {
@@ -370,14 +384,14 @@
         {
             "selector": ".comment-post-privatemode",
             "text": [
-                "和kokononine说悄悄话的说喵呜ねぷ～",
-                "专属于kokononine和你的秘密的说喵呜ねぷ～"
+                "和kokononine酱说悄悄话的说喵呜ねぷ～",
+                "来创造一个专属于kokononine酱和你的秘密叭喵呜ねぷ～"
             ]
         },
         {
             "selector": ".comment-post-mailnotice",
             "text": [
-                "kokononine可以更及时的通知你的说喵呜ねぷ～",
+                "kokononine酱可以更及时的通知你的说喵呜ねぷ～",
                 "要开启邮件提醒喵～"
             ]
         },
@@ -506,13 +520,13 @@
         {
             "selector": ".wp-block-code",
             "text": [
-                "这里是我家kokononine的code的说喵呜ねぷ～"
+                "这里是我家kokononine酱的code的说喵呜ねぷ～"
             ]
         },
         {
             "selector": "#leftbar_announcement",
             "text": [
-                "这里是kokononine向大家的宣言的说喵呜ねぷ～"
+                "这里是kokononine酱向大家的宣言的说喵呜ねぷ～"
             ]
         },
         {
@@ -590,7 +604,7 @@
         {
             "selector": "#comment_edit_history",
             "text": [
-                "只有kokononine和你自己可以看到编辑记录的说喵呜ねぷ～"
+                "只有kokononine酱和你自己可以看到编辑记录的说喵呜ねぷ～"
             ]
         },
         {
