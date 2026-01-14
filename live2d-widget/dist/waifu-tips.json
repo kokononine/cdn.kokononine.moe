@@ -3,8 +3,8 @@
         {
             "selector": ".kokononine-spoiler-mask , .kokononine-spoiler-text , .kokononine-spoiler-blur",
             "text": [
-                "你知道的太多了哦～OvO",
-                "这样的内容看过之后要假装不知道哦～OwO"
+                "你知道的太多了哦～(OvO)",
+                "这样的内容看过之后要假装不知道哦～(OwO)"
             ]
         },
         {
@@ -37,8 +37,8 @@
             "text": [
                 "喜欢换装 PLAY 嘛～",
                 "这次要扮演什么喵？",
-                "变装喵！>w<",
-                "让我们看看接下来会发生什么喵！>w<"
+                "变装喵！(>w<)",
+                "让我们看看接下来会发生什么喵！(>w<)"
             ]
         },
         {
@@ -60,9 +60,9 @@
         {
             "selector": "#waifu-tool-quit",
             "text": [
-                "到了要说再见的时候了嘛～>o<",
-                "呜呜 QAQ 后会有期……",
-                "不要抛弃我亚……TwT",
+                "到了要说再见的时候了嘛～(>o<)",
+                "呜呜 (QAQ) 后会有期……",
+                "不要抛弃我亚……(TwT)",
                 "我们，还能再见面吗……",
                 "哼，你会后悔的！"
             ]
@@ -294,6 +294,12 @@
             ]
         },
         {
+            "selector": ".badge-admin",
+            "text": [
+                "这是由管理员发表的评论的说喵呜ねぷ～"
+            ]
+        },
+        {
             "selector": ".comment-parent-info",
             "text": [
                 "这是被回复的评论发送者的名字的说喵呜ねぷ～"
@@ -339,6 +345,18 @@
             "selector": ".comment-reply",
             "text": [
                 "要回复这条评论喵？"
+            ]
+        },
+        {
+            "selector": ".comment-item-text",
+            "text": [
+                "哇～这里有一枚可爱的喵喵的评论的说喵呜ねぷ！"
+            ]
+        },
+        {
+            "selector": ".comment-item",
+            "text": [
+                "哇～这里有一枚可爱的喵喵的评论的说喵呜ねぷ～"
             ]
         },
         {
@@ -602,18 +620,6 @@
             ]
         },
         {
-            "selector": ".comment-item-text",
-            "text": [
-                "哇～这里有一枚可爱的喵喵的评论的说喵呜ねぷ！"
-            ]
-        },
-        {
-            "selector": ".comment-item",
-            "text": [
-                "哇～这里有一枚可爱的喵喵的评论的说喵呜ねぷ～"
-            ]
-        },
-        {
             "selector": ".shuoshuo-comments",
             "text": [
                 "这里是说说的评论的说喵呜ねぷ～"
@@ -866,7 +872,7 @@
         ],
         "console": "我看到你打开console了哦，是想要看看我的小秘密嘛～",
         "copy": "你都复制了些什么亚，转载要记得加上出处的说喵呜ねぷ～Ciallo～(∠·ω< )⌒★",
-        "visibilitychange": "哇，你终于回来啦～^o^",
+        "visibilitychange": "哇，你终于回来啦～(^o^)",
         "changeSuccess": "我的新衣服好看嘛～(ฅ´ω`ฅ)",
         "changeFail": "我还没有其他衣服呢！",
         "photo": "照好了嘛，是不是很可爱呢？",
@@ -898,7 +904,7 @@
             "真…真的是不知羞耻！",
             "Hentai！Σ(っ °Д °;)っ",
             "好害羞亚～o(*////▽////*)q",
-            "虽然很想让 Plutia 酱过来但是还是算掉了的说喵呜ねぷ～＞﹏＜"
+            "虽然很想让 Plutia 酱过来但是还是算掉了的说喵呜ねぷ～(＞﹏＜)"
         ]
     },
     "models": [
