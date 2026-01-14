@@ -482,12 +482,6 @@
             ]
         },
         {
-            "selector": ".shuoshuo-comments",
-            "text": [
-                "这里是说说的评论的说喵呜ねぷ～"
-            ]
-        },
-        {
             "selector": ".post-navigation-pre",
             "text": [
                 "来看看下一篇文章叭喵～",
@@ -617,6 +611,12 @@
             "selector": ".comment-item",
             "text": [
                 "哇～这里有一枚可爱的喵喵的评论的说喵呜ねぷ～"
+            ]
+        },
+        {
+            "selector": ".shuoshuo-comments",
+            "text": [
+                "这里是说说的评论的说喵呜ねぷ～"
             ]
         },
         {
