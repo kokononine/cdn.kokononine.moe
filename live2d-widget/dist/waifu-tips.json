@@ -8,6 +8,25 @@
             ]
         },
         {
+            "selector": ".post-content > *",
+            "text": [
+                "kokononine: <span>{text}</span>"
+            ]
+        },
+        {
+            "selector": ".shuoshuo > *",
+            "text": [
+                "kokononine: <span>{text}</span>"
+            ]
+        },
+        {
+            "selector": ".kokononine-spoiler-mask , .kokononine-spoiler-text , .kokononine-spoiler-blur",
+            "text": [
+                "你知道的太多了哦～(OvO)",
+                "这样的内容看过之后要假装不知道哦～(OwO)"
+            ]
+        },
+        {
             "selector": "#waifu-tool-hitokoto",
             "text": [
                 "猜猜我要说些什么亚？",
@@ -159,21 +178,21 @@
             "selector": "a[href*='/tags/']",
             "text": [
                 "要去看看 <span>{text}</span> 标签喵？",
-                "点它可以查看此标签下的所有文章的说喵呜ねぷ～"
+                "点它可以查看标签 <span>{text}</span> 下的所有文章的说喵呜ねぷ～"
             ]
         },
         {
             "selector": "a[href*='/categories/']",
             "text": [
                 "要去看看 <span>{text}</span> 分类喵？",
-                "点它可以查看此分类下的所有文章的说喵呜ねぷ～"
+                "点它可以查看分类 <span>{text}</span> 下的所有文章的说喵呜ねぷ～"
             ]
         },
         {
             "selector": "a[href*='/author/']",
             "text": [
                 "要去看看 <span>{text}</span> 的文章喵？",
-                "点它可以查看作者的所有文章的说喵呜ねぷ～"
+                "点它可以查看 <span>{text}</span> 的所有文章的说喵呜ねぷ～"
             ]
         },
         {
@@ -204,6 +223,12 @@
             ]
         },
         {
+            "selector": ".index-item",
+            "text": [
+                "要来看看 <span>{text}</span> 这个章节嘛(つ≧▽≦)つ～"
+            ]
+        },
+        {
             "selector": "#leftbar_tab_catalog_btn",
             "text": [
                 "这里有文章的目录的说喵呜ねぷ～"
@@ -220,6 +245,12 @@
             "text": [
                 "我家kokononine酱好看嘛～(◡ ω ◡)",
                 "这是我家kokononine酱哦(*´∇｀*)"
+            ]
+        },
+        {
+            "selector": "#leftbar_overview_author_description",
+            "text": [
+                "<span>{text}</span>"
             ]
         },
         {
@@ -288,21 +319,21 @@
             ]
         },
         {
-            "selector": ".comment-author , .shuoshuo-comment-item-title",
-            "text": [
-                "这是评论发送者的名字的说喵呜ねぷ～"
-            ]
-        },
-        {
             "selector": ".badge-admin",
             "text": [
                 "这是由管理员发表的评论的说喵呜ねぷ～"
             ]
         },
         {
+            "selector": ".comment-author , .shuoshuo-comment-item-title",
+            "text": [
+                "评论发送者的名字是 <span>{text}</span> 的说喵呜ねぷ～"
+            ]
+        },
+        {
             "selector": ".comment-parent-info",
             "text": [
-                "这是被回复的评论发送者的名字的说喵呜ねぷ～"
+                "被回复的评论发送者的名字是 <span>{text}</span> 的说喵呜ねぷ～"
             ]
         },
         {
@@ -320,7 +351,7 @@
         {
             "selector": ".comment-time",
             "text": [
-                "这是评论发送的时间的说喵呜ねぷ～"
+                "评论发送的时间是 <span>{text}</span> 的说喵呜ねぷ～"
             ]
         },
         {
@@ -350,13 +381,13 @@
         {
             "selector": ".comment-item-text , .shuoshuo-comment-item-text",
             "text": [
-                "哇～这里有一枚可爱的喵喵的评论的说喵呜ねぷ！"
+                "哇～这里有一枚可爱的喵喵的评论说 <span>{text}</span> 的说喵呜ねぷ！"
             ]
         },
         {
             "selector": ".comment-item",
             "text": [
-                "哇～这里有一枚可爱的喵喵的评论的说喵呜ねぷ～"
+                "哇～这里有一枚可爱的喵喵的评论说 <span>{text}</span> 的说喵呜ねぷ～"
             ]
         },
         {
@@ -424,37 +455,37 @@
         {
             "selector": ".post-meta-detail-author",
             "text": [
-                "这里是文章的作者的说喵呜ねぷ～"
+                "这篇文章的作者是 <span>{text}</span> 的说喵呜ねぷ～"
             ]
         },
         {
             "selector": ".post-meta-detail-time",
             "text": [
-                "这里是文章的发布时间的说，光标悬停之后会同时显示修改时间的说喵呜ねぷ～"
+                "这篇文章的发布时间是 <span>{text}</span> 的说，光标悬停之后会同时显示修改时间的说喵呜ねぷ～"
             ]
         },
         {
             "selector": ".post-meta-detail-edittime",
             "text": [
-                "这里是文章的修改时间的说，光标悬停之后会同时显示发布时间的说喵呜ねぷ～"
+                "这篇文章的修改时间是 <span>{text}</span> 的说，光标悬停之后会同时显示发布时间的说喵呜ねぷ～"
             ]
         },
         {
             "selector": ".post-meta-detail-views",
             "text": [
-                "这里是文章的累计阅读数量的说喵呜ねぷ～"
+                "这篇文章的累计阅读数量是 <span>{text}</span> 次的说喵呜ねぷ～"
             ]
         },
         {
             "selector": ".post-meta-detail-comments",
             "text": [
-                "这里是文章的累积评论数量的说喵呜ねぷ～"
+                "这篇文章有 <span>{text}</span> 条评论的说喵呜ねぷ～"
             ]
         },
         {
             "selector": ".post-meta-detail-categories",
             "text": [
-                "这里是文章的所属分类的说喵呜ねぷ～"
+                "这篇文章的所属分类是 <span>{text}</span> 的说喵呜ねぷ～"
             ]
         },
         {
@@ -478,7 +509,7 @@
         {
             "selector": ".shuoshuo-title",
             "text": [
-                "这里是说说的标题的说喵呜ねぷ～"
+                "要来看看 <span>{text}</span> 这篇说说嘛(つ≧▽≦)つ～"
             ]
         },
         {
@@ -557,6 +588,12 @@
             "selector": "#leftbar_part1",
             "text": [
                 "这里也可以搜索文章的说喵呜ねぷ～"
+            ]
+        },
+        {
+            "selector": "#leftbar_catalog",
+            "text": [
+                "从这里就可以快速跳转到对应的章节了哦的说喵呜ねぷ！"
             ]
         },
         {
