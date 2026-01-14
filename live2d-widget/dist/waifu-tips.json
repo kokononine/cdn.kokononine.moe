@@ -8,25 +8,6 @@
             ]
         },
         {
-            "selector": ".post-content > *",
-            "text": [
-                "kokononine: <span>{text}</span>"
-            ]
-        },
-        {
-            "selector": ".shuoshuo > *",
-            "text": [
-                "kokononine: <span>{text}</span>"
-            ]
-        },
-        {
-            "selector": ".kokononine-spoiler-mask , .kokononine-spoiler-text , .kokononine-spoiler-blur",
-            "text": [
-                "你知道的太多了哦～(OvO)",
-                "这样的内容看过之后要假装不知道哦～(OwO)"
-            ]
-        },
-        {
             "selector": "#waifu-tool-hitokoto",
             "text": [
                 "猜猜我要说些什么亚？",
@@ -381,13 +362,13 @@
         {
             "selector": ".comment-item-text , .shuoshuo-comment-item-text",
             "text": [
-                "哇～这里有一枚可爱的喵喵的评论说 <span>{text}</span> 的说喵呜ねぷ！"
+                "哇～这里有一枚可爱的喵喵的评论说 <span>{text}</span> 的说喵呜ねぷ～"
             ]
         },
         {
             "selector": ".comment-item",
             "text": [
-                "哇～这里有一枚可爱的喵喵的评论说 <span>{text}</span> 的说喵呜ねぷ～"
+                "哇～这里有一枚可爱的喵喵的评论的说喵呜ねぷ～"
             ]
         },
         {
@@ -503,7 +484,7 @@
         {
             "selector": ".post-tags",
             "text": [
-                "这里是文章的所属标签的说喵呜ねぷ～"
+                "这篇文章的所属标签是 <span>{text}</span> 的说喵呜ねぷ～"
             ]
         },
         {
@@ -515,7 +496,7 @@
         {
             "selector": ".shuoshuo-preview-meta , .shuoshuo-meta",
             "text": [
-                "这里是说说的统计信息的说喵呜ねぷ～"
+                "这篇说说在 <span>{text}</span> 的时候发表的说喵呜ねぷ～"
             ]
         },
         {
@@ -627,6 +608,12 @@
             ]
         },
         {
+            "selector": ".post-content > *",
+            "text": [
+                "kokononine: <span>{text}</span>"
+            ]
+        },
+        {
             "selector": ".post-content",
             "text": [
                 "这里是文章的内容的说喵呜ねぷ～"
@@ -642,6 +629,12 @@
             "selector": ".post .post-full",
             "text": [
                 "这里是文章的内容的说喵呜ねぷ～"
+            ]
+        },
+        {
+            "selector": ".shuoshuo-content > *",
+            "text": [
+                "kokononine: <span>{text}</span>"
             ]
         },
         {
