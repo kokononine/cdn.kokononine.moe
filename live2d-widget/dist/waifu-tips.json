@@ -288,7 +288,7 @@
             ]
         },
         {
-            "selector": ".comment-author",
+            "selector": ".comment-author , .shuoshuo-comment-item-title",
             "text": [
                 "这是评论发送者的名字的说喵呜ねぷ～"
             ]
@@ -348,7 +348,7 @@
             ]
         },
         {
-            "selector": ".comment-item-text",
+            "selector": ".comment-item-text , .shuoshuo-comment-item-text",
             "text": [
                 "哇～这里有一枚可爱的喵喵的评论的说喵呜ねぷ！"
             ]
@@ -614,7 +614,7 @@
             ]
         },
         {
-            "selector": ".shuoshuo-preview-container , shuoshuo-container",
+            "selector": ".shuoshuo-preview-container , .shuoshuo-container",
             "text": [
                 "这里是说说的内容预览的说喵呜ねぷ～"
             ]
