@@ -210,12 +210,6 @@
             ]
         },
         {
-            "selector": "#leftbar_tab_catalog",
-            "text": [
-                "从这里就可以快速跳转到对应的章节了哦的说喵呜ねぷ～"
-            ]
-        },
-        {
             "selector": "#leftbar_tab_overview_btn",
             "text": [
                 "这里是kokononine's blog的概览的说喵呜ねぷ～"
@@ -231,7 +225,7 @@
         {
             "selector": "#leftbar_tab_tools_btn",
             "text": [
-                "这里有blog的各种功能的说喵呜ねぷ～"
+                "这里有kokononine's blog的各种功能的说喵呜ねぷ～"
             ]
         },
         {
@@ -262,7 +256,7 @@
             "text": [
                 "想要去评论些什么嘛～",
                 "要说点什么嘛～",
-                "觉得blog不错的样子？快来留言和kokononine酱交流叭喵！",
+                "觉得kokononine's blog非常不错的样子？快来留言和kokononine酱交流叭喵！",
                 "评论之前要先看文章哦～"
             ]
         },
@@ -278,7 +272,7 @@
             "text": [
                 "点击它就可以设置夜间模式了哦！",
                 "夜间觉得页面太亮的话可以在这里设置夜间模式哦～",
-                "要修改blog显示样式嘛？"
+                "要修改kokononine's blog的显示样式嘛？"
             ]
         },
         {
@@ -470,9 +464,27 @@
             ]
         },
         {
-            "selector": ".shuoshuo-preview-meta",
+            "selector": ".shuoshuo-preview-meta , .shuoshuo-meta",
             "text": [
                 "这里是说说的统计信息的说喵呜ねぷ～"
+            ]
+        },
+        {
+            "selector": ".shuoshuo-preview-add-comment",
+            "text": [
+                "要为这条说说评论喵～(>▽<)"
+            ]
+        },
+        {
+            "selector": ".shuoshuo-upvote",
+            "text": [
+                "要为这条说说点赞喵～(>▽<)"
+            ]
+        },
+        {
+            "selector": ".shuoshuo-comments",
+            "text": [
+                "这里是说说的评论的说喵呜ねぷ～"
             ]
         },
         {
@@ -536,7 +548,19 @@
             ]
         },
         {
-            "selector": "#leftbar_part2",
+            "selector": "#leftbar_tab_catalog",
+            "text": [
+                "从这里就可以快速跳转到对应的章节了哦的说喵呜ねぷ～"
+            ]
+        },
+        {
+            "selector": "#leftbar_tab_tools",
+            "text": [
+                "这里有kokononine's blog的各种功能的说喵呜ねぷ～"
+            ]
+        },
+        {
+            "selector": "#leftbar_part2 , #leftbar_tab_overview",
             "text": [
                 "这里是kokononine's blog的概览的说喵呜ねぷ～"
             ]
@@ -840,9 +864,9 @@
             "主角光环会解决所有的问题的说，所以可以尽情摸鱼的说喵呜ねぷ~ヾ(≧∇≦*)ゝ",
             "把你涅普涅普掉哟！"
         ],
-        "console": "看到你打开console了哦，是想要看看我的小秘密嘛～",
+        "console": "我看到你打开console了哦，是想要看看我的小秘密嘛～",
         "copy": "你都复制了些什么亚，转载要记得加上出处的说喵呜ねぷ～Ciallo～(∠·ω< )⌒★",
-        "visibilitychange": "哇，你终于回来啦～",
+        "visibilitychange": "哇，你终于回来啦～^o^",
         "changeSuccess": "我的新衣服好看嘛～(ฅ´ω`ฅ)",
         "changeFail": "我还没有其他衣服呢！",
         "photo": "照好了嘛，是不是很可爱呢？",
