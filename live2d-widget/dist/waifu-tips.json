@@ -4,7 +4,7 @@
             "selector": ".kokononine-spoiler-mask , .kokononine-spoiler-text , .kokononine-spoiler-blur",
             "text": [
                 "你知道的太多了哦～(OvO)",
-                "这样的内容看过之后要假装不知道哦～(OwO)"
+                "这样的内容在看过之后要假装不知道哦～(OwO)"
             ]
         },
         {
@@ -78,15 +78,15 @@
         {
             "selector": ".kokononine-blog-links-about-me",
             "text": [
-                "你想知道我家kokononine酱是谁嘛～",
-                "这里有一些关于我家kokononine酱的秘密哦，要不要来看一看亚～",
-                "发现我家kokononine酱出没地点的说喵呜ねぷ～"
+                "你想知道我家 kokononine 酱是谁嘛～",
+                "这里有一些关于我家 kokononine 酱的秘密哦，要不要来看一看亚～",
+                "发现我家 kokononine 酱出没地点的说喵呜ねぷ～"
             ]
         },
         {
             "selector": ".kokononine-blog-links-board",
             "text": [
-                "要给我家kokononine酱留言喵呜ねぷ～"
+                "要给我家 kokononine 酱留言喵呜ねぷ～"
             ]
         },
         {
@@ -100,7 +100,7 @@
         {
             "selector": ".kokononine-blog-links-main-site",
             "text": [
-                "这是我家kokononine酱的主页的说喵呜ねぷ～"
+                "这是我家 kokononine 酱的主页的说喵呜ねぷ～"
             ]
         },
         {
@@ -108,7 +108,7 @@
             "text": [
                 "点击就可以查看文章的标签啦！",
                 "每一篇文章都有标签哦～",
-                "点击来查看所有文章标签的说喵呜ねぷ～"
+                "点击来查看所有文章的标签的说喵呜ねぷ～"
             ]
         },
         {
@@ -116,7 +116,7 @@
             "text": [
                 "点击就可以查看文章的分类啦！",
                 "每一篇文章都分类好啦～",
-                "点击来查看所有文章分类的说喵呜ねぷ～"
+                "点击来查看所有文章的分类的说喵呜ねぷ～"
             ]
         },
         {
@@ -129,22 +129,22 @@
         {
             "selector": ".kokononine-blog-links-archive",
             "text": [
-                "翻页比较麻烦吗，那就来看看文章归档叭的说喵呜ねぷ～",
-                "文章目录都整理在这里啦～"
+                "翻页比较麻烦吗，那就来看看文章的归档叭的说喵呜ねぷ～",
+                "文章的目录都整理在这里啦～"
             ]
         },
         {
             "selector": ".kokononine-blog-links-shuoshuo",
             "text": [
                 "这里是主人的日记的说喵呜ねぷ～",
-                "听说这里有主人的各种记录的说喵呜ねぷ～"
+                "听说这里有关于主人的各种记录的说喵呜ねぷ～"
             ]
         },
         {
             "selector": ".kokononine-blog-links-rss-feed",
             "text": [
-                "这里可以使用 RSS 订阅喵！",
-                "利用 feed 订阅器，就能快速知道blog有没有更新了喵～"
+                "这里可以使用 RSS feed 订阅喵！",
+                "利用 RSS feed 订阅器，就能快速知道 kokononine's blog 有没有更新了喵～"
             ]
         },
         {
@@ -152,7 +152,7 @@
             "text": [
                 "要记得规范转载的说喵呜ねぷ～",
                 "所有文章均采用 CC BY-NC-SA 4.0 许可协议的说喵呜ねぷ～",
-                "转载前要先注意下文章的版权协议喵呜～"
+                "转载之前要先注意下文章的版权协议喵呜～"
             ]
         },
         {
@@ -212,38 +212,44 @@
         {
             "selector": "#leftbar_tab_catalog_btn",
             "text": [
-                "这里有文章的目录的说喵呜ねぷ～"
+                "这里有本篇文章的目录的说喵呜ねぷ～"
             ]
         },
         {
             "selector": "#leftbar_tab_overview_btn",
             "text": [
-                "这里是kokononine's blog的概览的说喵呜ねぷ～"
+                "这里是 kokononine's blog 的概览的说喵呜ねぷ～"
             ]
         },
         {
             "selector": "#leftbar_overview_author_image",
             "text": [
-                "我家kokononine酱好看嘛～(◡ ω ◡)",
-                "这是我家kokononine酱哦(*´∇｀*)"
+                "我家 kokononine 酱好看嘛～(◡ ω ◡)",
+                "这是我家 kokononine 酱哦(*´∇｀*)"
+            ]
+        },
+        {
+            "selector": "#leftbar_overview_author_name",
+            "text": [
+                "是最可爱 kokononine 酱的说喵呜ねぷ～三倍 ice cream～(≧▽≦)"
             ]
         },
         {
             "selector": "#leftbar_overview_author_description",
             "text": [
-                "<span>{text}</span>"
+                "kokononine: <span>{text}</span>"
             ]
         },
         {
             "selector": "#leftbar_tab_tools_btn",
             "text": [
-                "这里有kokononine's blog的各种功能的说喵呜ねぷ～"
+                "这里有 kokononine's blog 的各种功能的说喵呜ねぷ～"
             ]
         },
         {
             "selector": "#share_show",
             "text": [
-                "好东西要让更多人知道才行哦～",
+                "好东西要让更多人知道才可以哦～",
                 "觉得文章有帮助的话，可以分享给更多需要的朋友呢～"
             ]
         },
@@ -268,7 +274,7 @@
             "text": [
                 "想要去评论些什么嘛～",
                 "要说点什么嘛～",
-                "觉得kokononine's blog非常不错的样子？快来留言和kokononine酱交流叭喵！",
+                "觉得 kokononine's blog 非常不错的样子？快来留言和 kokononine 酱交流叭喵！",
                 "评论之前要先看文章哦～"
             ]
         },
@@ -284,13 +290,13 @@
             "text": [
                 "点击它就可以设置夜间模式了哦！",
                 "夜间觉得页面太亮的话可以在这里设置夜间模式哦～",
-                "要修改kokononine's blog的显示样式嘛？"
+                "要修改 kokononine's blog 的显示样式嘛？"
             ]
         },
         {
             "selector": ".comment-item-avatar",
             "text": [
-                "这是评论发送者的头像的说喵呜ねぷ～"
+                "这是评论的发送者的头像的说喵呜ねぷ～"
             ]
         },
         {
@@ -308,31 +314,31 @@
         {
             "selector": ".comment-author , .shuoshuo-comment-item-title",
             "text": [
-                "评论发送者的名字是 <span>{text}</span> 的说喵呜ねぷ～"
+                "这条评论由名为 <span>{text}</span> 的喵喵发表的说喵呜ねぷ～"
             ]
         },
         {
             "selector": ".comment-parent-info",
             "text": [
-                "被回复的评论发送者的名字是 <span>{text}</span> 的说喵呜ねぷ～"
+                "这条被回复的评论由名为 <span>{text}</span> 的喵喵发表的说喵呜ねぷ～"
             ]
         },
         {
             "selector": ".comment-useragent",
             "text": [
-                "这是评论发送者的设备信息的说喵呜ねぷ～"
+                "这条评论的发送者的设备信息是 <span>{text}</span> 的说喵呜ねぷ～"
             ]
         },
         {
             "selector": ".comment-edited",
             "text": [
-                "可以点击这里查看评论编辑记录的说喵呜ねぷ～"
+                "可以点击这里查看评论的编辑记录的说喵呜ねぷ～"
             ]
         },
         {
             "selector": ".comment-time",
             "text": [
-                "评论发送的时间是 <span>{text}</span> 的说喵呜ねぷ～"
+                "这条评论发送的时间是 <span>{text}</span> 的说喵呜ねぷ～"
             ]
         },
         {
@@ -408,14 +414,14 @@
         {
             "selector": ".comment-post-privatemode",
             "text": [
-                "和kokononine酱说悄悄话的说喵呜ねぷ～",
-                "来创造一个专属于kokononine酱和你的秘密叭喵呜ねぷ～"
+                "和 kokononine 酱说悄悄话的说喵呜ねぷ～",
+                "来创造一个专属于 kokononine 酱和你的秘密叭喵呜ねぷ～"
             ]
         },
         {
             "selector": ".comment-post-mailnotice",
             "text": [
-                "kokononine酱可以更及时的通知你的说喵呜ねぷ～",
+                "kokononine 酱可以更及时的通知你的说喵呜ねぷ～",
                 "要开启邮件提醒喵～"
             ]
         },
@@ -436,7 +442,7 @@
         {
             "selector": ".post-meta-detail-author",
             "text": [
-                "这篇文章的作者是 <span>{text}</span> 的说喵呜ねぷ～"
+                "这篇文章由名为 <span>{text}</span> 的喵喵发布的说喵呜ねぷ～"
             ]
         },
         {
@@ -530,21 +536,27 @@
         {
             "selector": "a[href^='mailto']",
             "text": [
-                "kokononine酱会及时回复邮件的说喵呜ねぷ！",
+                "kokononine 酱会及时回复邮件的说喵呜ねぷ！",
                 "点击就可以发送邮件啦的说喵呜ねぷ～～"
+            ]
+        },
+        {
+            "selector": "a[href*='kokononine.moe']",
+            "text": [
+                "据说这里可能会出现 三倍 ice cream 的说喵呜ねぷ～(≧▽≦)"
             ]
         },
         {
             "selector": "a:not([href*='kokononine.moe'])",
             "text": [
-                "快看看这里都有什么喵呜～(≧▽≦)",
+                "快看看这里都有什么喵呜ねぷ～(≧▽≦)",
                 "千万不要点击这里的说喵呜ねぷ～( ╹▽╹ )"
             ]
         },
         {
             "selector": "img",
             "text": [
-                "文章中的图片点击可以放大的说喵呜ねぷ！(☆ω☆)"
+                "文章中的图片点击之后可以放大的说喵呜ねぷ！(☆ω☆)"
             ]
         },
         {
@@ -556,13 +568,13 @@
         {
             "selector": ".wp-block-code",
             "text": [
-                "这里是我家kokononine酱的code的说喵呜ねぷ～"
+                "这里是我家 kokononine 酱的code的说喵呜ねぷ～"
             ]
         },
         {
             "selector": "#leftbar_announcement",
             "text": [
-                "这里是kokononine酱向大家的宣言的说喵呜ねぷ～"
+                "这里是 kokononine 酱向大家的宣言的说喵呜ねぷ～"
             ]
         },
         {
@@ -586,29 +598,35 @@
         {
             "selector": "#leftbar_tab_tools",
             "text": [
-                "这里有kokononine's blog的各种功能的说喵呜ねぷ～"
+                "这里有 kokononine's blog 的各种功能的说喵呜ねぷ～"
             ]
         },
         {
             "selector": "#leftbar_part2 , #leftbar_tab_overview",
             "text": [
-                "这里是kokononine's blog的概览的说喵呜ねぷ～"
+                "这里是 kokononine's blog 的概览的说喵呜ねぷ～"
             ]
         },
         {
             "selector": "#blog_tags",
             "text": [
-                "所有的文章标签都在这里啦的说喵呜ねぷ～"
+                "所有的文章的标签都在这里啦的说喵呜ねぷ～"
             ]
         },
         {
             "selector": "#blog_categories",
             "text": [
-                "所有的文章分类都在这里啦的说喵呜ねぷ～"
+                "所有的文章的分类都在这里啦的说喵呜ねぷ～"
             ]
         },
         {
-            "selector": ".post-content > *",
+            "selector": ".post .post-full > .post-content > *",
+            "text": [
+                "kokononine: <span>{text}</span>"
+            ]
+        },
+        {
+            "selector": ".post-preview > .post-content",
             "text": [
                 "kokononine: <span>{text}</span>"
             ]
@@ -664,7 +682,7 @@
         {
             "selector": "#comment_edit_history",
             "text": [
-                "只有kokononine酱和你自己可以看到编辑记录的说喵呜ねぷ～"
+                "只有 kokononine 酱和你自己可以看到编辑记录的说喵呜ねぷ～"
             ]
         },
         {
@@ -816,19 +834,19 @@
     "seasons": [
         {
             "date": "01/01",
-            "text": "<span>元旦</span>了呢，新的一年又开始了，今年是{year}年的说喵呜ねぷ～"
+            "text": "<span>元旦</span> 了呢，新的一年又开始了，今年是{year}年的说喵呜ねぷ～"
         },
         {
             "date": "02/14",
-            "text": "又是一年<span>情人节</span>呢，{year}年找到对象了嘛～"
+            "text": "又是一年 <span>情人节</span> 呢，{year}年找到对象了嘛～"
         },
         {
             "date": "03/08",
-            "text": "今天是<span>国际妇女节</span>的说喵呜ねぷ～！"
+            "text": "今天是 <span>国际妇女节</span> 的说喵呜ねぷ～！"
         },
         {
             "date": "03/12",
-            "text": "今天是<span>植树节</span>，要保护环境亚！"
+            "text": "今天是 <span>植树节</span> ，要保护环境亚！"
         },
         {
             "date": "04/01",
@@ -836,19 +854,19 @@
         },
         {
             "date": "05/01",
-            "text": "今天是<span>五一劳动节</span>，计划好假期去哪里了嘛～"
+            "text": "今天是 <span>五一劳动节</span>，计划好假期去哪里了嘛～"
         },
         {
             "date": "06/01",
-            "text": "<span>儿童节</span>了呢，快活的时光总是短暂，要是永远长不大该多好啊…"
+            "text": " <span>儿童节</span> 了呢，快活的时光总是短暂，要是永远长不大该多好啊…"
         },
         {
             "date": "11/05-11/12",
-            "text": "今年的<span>双十一</span>是和谁一起过的呢～"
+            "text": "今年的 <span>双十一</span> 是和谁一起过的呢～"
         },
         {
             "date": "12/20-12/31",
-            "text": "这几天是<span>圣诞节</span>，主人肯定又去剁手买买买了～"
+            "text": "这几天是 <span>圣诞节</span> ，主人肯定又去剁手买买买了～"
         }
     ],
     "time": [
@@ -900,7 +918,7 @@
             "主角光环会解决所有的问题的说，所以可以尽情摸鱼的说喵呜ねぷ~ヾ(≧∇≦*)ゝ",
             "把你涅普涅普掉哟！"
         ],
-        "console": "我看到你打开console了哦，是想要看看我的小秘密嘛～",
+        "console": "我看到你打开 console 了哦，是想要看看我的小秘密嘛～",
         "copy": "你都复制了些什么亚，转载要记得加上出处的说喵呜ねぷ～Ciallo～(∠·ω< )⌒★",
         "visibilitychange": "哇，你终于回来啦～(^o^)",
         "changeSuccess": "我的新衣服好看嘛～(ฅ´ω`ฅ)",
