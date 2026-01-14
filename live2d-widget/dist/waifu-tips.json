@@ -626,15 +626,15 @@
             ]
         },
         {
-            "selector": ".post-content",
-            "text": [
-                "这里是文章的内容的说喵呜ねぷ～"
-            ]
-        },
-        {
             "selector": ".post-preview > .post-content",
             "text": [
                 "kokononine: <span>{text}</span>"
+            ]
+        },
+        {
+            "selector": ".post-content",
+            "text": [
+                "这里是文章的内容的说喵呜ねぷ～"
             ]
         },
         {
