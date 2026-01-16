@@ -18,7 +18,7 @@
 			$trim_words_count = get_option('argon_trim_words_count', 175);
 		?>
 		<?php if ($trim_words_count > 0){ ?>
-			<div class="post-content">
+			<div class="post-content" onclick="$.pjax({url:'<?php the_permalink(); ?>'})">
 				<?php
 					if (get_option("argon_hide_shortcode_in_preview") == 'true'){
 						$preview = wp_trim_words(do_shortcode(get_the_content('...')), $trim_words_count);
@@ -70,8 +70,11 @@
 				<i class="fa fa-tags" aria-hidden="true"></i>
 				<?php
 					$tags = get_the_tags();
-					foreach ($tags as $tag) {
+					foreach ($tags as $index => $tag) {
 						echo "<a href='" . get_category_link($tag -> term_id) . "' target='_blank' class='tag badge badge-secondary post-meta-detail-tag'>" . $tag -> name . "</a>";
+						if ($index != count($tags) - 1){
+							echo '<div class="post-meta-detail-tag-devide">|</div>';
+						}
 					}
 				?>
 			</div>

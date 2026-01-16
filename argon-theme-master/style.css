@@ -1983,7 +1983,7 @@ html.filter-grayscale {
 .post-meta-detail-tag-devide {
 	display: inline-block;
 	margin-left: -6px;
-	opacity: 0.5;
+	opacity: 0;
 	user-select: none;
 }
 .additional-content-after-post + .post-tags {

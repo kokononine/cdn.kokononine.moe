@@ -704,7 +704,7 @@ function get_article_meta($type){
 function get_article_reading_time_meta($post_content_full){
 	$post_content_full = apply_filters("argon_html_before_wordcount", $post_content_full);
 	$words = get_article_words($post_content_full);
-	$res = '</br><div class="post-meta-detail post-meta-detail-words">
+	$res = '</br><div class="post-meta-detail post-meta-detail-words post-meta-detail-wordcount">
 		<i class="fa fa-file-word-o" aria-hidden="true"></i>';
 	if ($words['code'] > 0){
 		$res .= '<span title="' . sprintf(__( '包含 %d 行代码', 'argon'), $words['code']) . '">';
@@ -715,7 +715,7 @@ function get_article_reading_time_meta($post_content_full){
 	$res .= '</span>
 		</div>
 		<div class="post-meta-devide">|</div>
-		<div class="post-meta-detail post-meta-detail-words">
+		<div class="post-meta-detail post-meta-detail-words post-meta-detail-readingtime">
 			<i class="fa fa-hourglass-end" aria-hidden="true"></i>
 			' . get_reading_time(get_article_words($post_content_full)) . '
 		</div>
@@ -1903,7 +1903,8 @@ function argon_lazyload($content){
 	}
 	$lazyload_loading_style = "lazyload-style-" . $lazyload_loading_style;
 
-	if(!is_feed() && !is_robots() && !is_home()){
+//	if(!is_feed() && !is_robots() && !is_home()){
+	if(!is_feed() && !is_robots() && !is_home() && !is_archive()){
 		$content = preg_replace('/<img(.*?)src=[\'"](.*?)[\'"](.*?)((\/>)|(<\/img>))/i',"<img class=\"lazyload " . $lazyload_loading_style . "\" src=\"data:image/svg+xml;base64,PCEtLUFyZ29uTG9hZGluZy0tPgo8c3ZnIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjZmZmZmZmMDAiPjxnPjwvZz4KPC9zdmc+\" \$1data-original=\"\$2\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC\"\$3$4" , $content);
 		$content = preg_replace('/<img(.*?)data-full-url=[\'"]([^\'"]+)[\'"](.*)>/i',"<img$1data-full-url=\"$2\" data-original=\"$2\"$3>" , $content);
 		$content = preg_replace('/<img(.*?)srcset=[\'"](.*?)[\'"](.*?)>/i',"<img$1$3>" , $content);
@@ -1911,7 +1912,8 @@ function argon_lazyload($content){
 	return $content;
 }
 function argon_fancybox($content){
-	if(!is_feed() && !is_robots() && !is_home()){
+//	if(!is_feed() && !is_robots() && !is_home()){
+	if(!is_feed() && !is_robots() && !is_home() && !is_archive()){
 		if (get_option('argon_enable_lazyload') != 'false'){
 			$content = preg_replace('/<img(.*?)data-original=[\'"](.*?)[\'"](.*?)((\/>)|>|(<\/img>))/i',"<div class='fancybox-wrapper lazyload-container-unload' data-fancybox='post-images' href='$2'>$0</div>" , $content);
 		}else{
@@ -3122,7 +3124,8 @@ function init_shuoshuo(){
 			'with_front' => false
 		),
 		'capability_type' => 'post',
-		'has_archive' => false,
+//		'has_archive' => false,
+		'has_archive' => true,
 		'hierarchical' => false,
 		'menu_position' => null,
 		'menu_icon' => 'dashicons-format-quote',
@@ -3174,3 +3177,24 @@ function argon_login_page_style() {
 if (get_option('argon_enable_login_css') == 'true'){
 	add_action('login_head', 'argon_login_page_style');
 }
+// 将 'shuoshuo' 类型的文章加入到 RSS feed 中
+function shuoshuo_rss_query($query) {
+    if ($query->is_feed) {
+        $query->set('post_type', array('post', 'shuoshuo')); // 添加 'shuoshuo' 类型
+    }
+    return $query;
+}
+add_filter('pre_get_posts', 'shuoshuo_rss_query');
+ 
+// 只在 RSS feed 中为没有标题的 'shuoshuo' 类型的文章自动生成默认标题
+function shuoshuo_rss_add_default_title($title, $post_id) {
+    if (is_feed()) {  // 检查是否为 RSS feed
+        $post_type = get_post_type($post_id);
+        
+        if ($post_type == 'shuoshuo' && $title == '') {
+            return '说说'; // 只在 RSS feed 中为没有标题的 'shuoshuo' 类型的文章设置默认标题 '说说'
+        }
+    }
+    return $title;
+}
+add_filter('the_title', 'shuoshuo_rss_add_default_title', 10, 2);

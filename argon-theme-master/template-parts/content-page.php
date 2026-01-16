@@ -101,8 +101,11 @@
 			<i class="fa fa-tags" aria-hidden="true"></i>
 			<?php
 				$tags = get_the_tags();
-				foreach ($tags as $tag) {
+				foreach ($tags as $index => $tag) {
 					echo "<a href='" . get_category_link($tag -> term_id) . "' target='_blank' class='tag badge badge-secondary post-meta-detail-tag'>" . $tag -> name . "</a>";
+					if ($index != count($tags) - 1){
+						echo '<div class="post-meta-detail-tag-devide">|</div>';
+					}
 				}
 			?>
 		</div>
