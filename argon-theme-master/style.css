@@ -4571,7 +4571,7 @@ pre.hljs-codeblock.hljs-codeblock-fullscreen:before {
 	}
 }
 pre.hljs-codeblock.hljs-hide-linenumber .hljs-ln-numbers.hljs {
-	width: 0px;
+	width: 30px;
 	opacity: 0;
 }
 pre.hljs-codeblock.hljs-hide-linenumber .hljs-ln-code {
