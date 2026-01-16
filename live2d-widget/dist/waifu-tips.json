@@ -225,7 +225,7 @@
             "selector": "#leftbar_overview_author_image",
             "text": [
                 "我家 kokononine 酱好看嘛～(◡ ω ◡)",
-                "这是我家 kokononine 酱哦(*´∇｀*)"
+                "这是我家 kokononine 酱的说喵呜ねぷ～(*´∇｀*)"
             ]
         },
         {
@@ -414,14 +414,14 @@
         {
             "selector": ".comment-post-privatemode",
             "text": [
-                "和 kokononine 酱说悄悄话的说喵呜ねぷ～",
-                "来创造一个专属于 kokononine 酱和你的秘密叭喵呜ねぷ～"
+                "快来和 kokononine 酱说悄悄话的说喵呜ねぷ～",
+                "快来创造一个专属于 kokononine 酱和你的秘密叭喵呜ねぷ～"
             ]
         },
         {
             "selector": ".comment-post-mailnotice",
             "text": [
-                "kokononine 酱可以更及时的通知你的说喵呜ねぷ～",
+                "开启邮件提醒之后 kokononine 酱可以更及时的通知你的说喵呜ねぷ～",
                 "要开启邮件提醒喵～"
             ]
         },
@@ -437,6 +437,18 @@
             "text": [
                 "要对自己的发言负责哦～",
                 "要提交了吗，请耐心等待回复哦～"
+            ]
+        },
+        {
+            "selector": ".post-meta-detail-stickey",
+            "text": [
+                "这是一篇被置顶的文章的说喵呜ねぷ～"
+            ]
+        },
+        {
+            "selector": ".post-meta-detail-needpassword",
+            "text": [
+                "这是一篇被密码保护的文章的说喵呜ねぷ～"
             ]
         },
         {
@@ -476,6 +488,18 @@
             ]
         },
         {
+            "selector": ".post-meta-detail-wordcount",
+            "text": [
+                "这篇文章文章有 <span>{text}</span> 字的说喵呜ねぷ～"
+            ]
+        },
+        {
+            "selector": ".post-meta-detail-readingtime",
+            "text": [
+                "这篇文章的阅读时间预计需要 <span>{text}</span> 的说喵呜ねぷ～"
+            ]
+        },
+        {
             "selector": ".post-meta-detail-words",
             "text": [
                 "这里是文章的字数和预计阅读时间的说喵呜ねぷ～"
@@ -502,7 +526,7 @@
         {
             "selector": ".shuoshuo-preview-meta , .shuoshuo-meta",
             "text": [
-                "这篇说说在 <span>{text}</span> 的时候发表的说喵呜ねぷ～"
+                "这篇说说是在 <span>{text}</span> 的时候发表的说喵呜ねぷ～"
             ]
         },
         {
@@ -541,7 +565,7 @@
             ]
         },
         {
-            "selector": "a[href*='kokononine.moe']",
+            "selector": "a[href*='kokononine.moe'] , a[href^='/']:not([href^='//'])",
             "text": [
                 "据说这里可能会出现 三倍 ice cream 的说喵呜ねぷ～(≧▽≦)"
             ]
@@ -586,13 +610,13 @@
         {
             "selector": "#leftbar_catalog",
             "text": [
-                "从这里就可以快速跳转到对应的章节了哦的说喵呜ねぷ！"
+                "从这里就可以快速跳转到文章中对应的章节了哦的说喵呜ねぷ！"
             ]
         },
         {
             "selector": "#leftbar_tab_catalog",
             "text": [
-                "从这里就可以快速跳转到对应的章节了哦的说喵呜ねぷ～"
+                "从这里就可以快速跳转到文章中对应的章节了哦的说喵呜ねぷ～"
             ]
         },
         {

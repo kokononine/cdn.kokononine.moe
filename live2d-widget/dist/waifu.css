@@ -27,7 +27,7 @@
 }
 
 #waifu {
-    bottom: -540px;
+    bottom: -999px;
     left: 0px;
     position: fixed;
     transform: translateY(15px);
@@ -57,7 +57,7 @@
     box-shadow: 0px 3px 15px 2px #ff9fbf7f);
     font-size: 15px;
     line-height: 150%;
-    margin: -70px 20px;
+    margin: -20px 20px;
     min-height: 100px;
     opacity: 0;
     overflow: hidden;
@@ -67,6 +67,11 @@
     transition: opacity 1s;
     width: 400px;
     word-break: break-all;
+    height: auto;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: 100%;
 }
 
 #waifu-tips.waifu-tips-active {
