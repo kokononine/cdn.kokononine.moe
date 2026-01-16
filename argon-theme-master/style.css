@@ -1980,6 +1980,12 @@ html.filter-grayscale {
 	margin-right: 7px;
 	font-size: 12px;
 }
+.post-meta-detail-tag-devide {
+	display: inline-block;
+	margin-left: -6px;
+	opacity: 0.5;
+	user-select: none;
+}
 .additional-content-after-post + .post-tags {
 	margin-top: 25px;
 }
@@ -4482,8 +4488,8 @@ code[hljs-codeblock-inner] {
 	text-align: center;
 	vertical-align: top;
 	padding-right: 12px !important;
-	position: absolute;
-	left: 20px;
+	position: sticky;
+	left: 0px;
 	width: 30px;
 	overflow-x: visible !important;
 	white-space: nowrap;
@@ -4501,7 +4507,7 @@ pre.hljs-codeblock.hljs-transparent-linenumber .hljs-ln-numbers {
 	background: transparent !important;
 }
 .hljs-ln-code {
-	padding-left: 30px !important;
+	padding-left: 0px !important;
 	transition: all 0.3s ease;
 }
 pre.hljs-codeblock.hljs-break-line .hljs-ln-code {
@@ -4569,7 +4575,8 @@ pre.hljs-codeblock.hljs-hide-linenumber .hljs-ln-numbers.hljs {
 	opacity: 0;
 }
 pre.hljs-codeblock.hljs-hide-linenumber .hljs-ln-code {
-	padding-left: 4px !important;
+	padding-left: 0px !important;
+	transform: translateX(-30px);
 }
 pre.hljs-codeblock .hljs-control {
 	display: block;
