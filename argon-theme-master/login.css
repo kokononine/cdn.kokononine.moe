@@ -1,5 +1,5 @@
 body {
-	background: linear-gradient(150deg,#7795f8 15%,#6772e5 70%,#555abf 94%);
+	background: linear-gradient(150deg,#ff9fbf 15%,#ffccdd 70%,#9fffff 94%);
 }
 .login h1 {
 	display: none;
@@ -40,7 +40,7 @@ body {
 	font-size: 16px;
 }
 .login .button.wp-hide-pw {
-	color: #5e72e4;
+	color: #ff9fbf;
 	height: 100%;
 	border: none;
 }
@@ -68,8 +68,8 @@ input[type=checkbox] {
 }
 input[type=checkbox]:checked:before {
 	color: #fff;
-	border-color: #5e72e4;
-	background-color: #5e72e4;
+	border-color: #ff9fbf;
+	background-color: #ff9fbf;
 }
 input[type=checkbox]:after {
 	content: '';
@@ -101,7 +101,7 @@ input[type=checkbox] + label {
 	border: none !important;
 }
 .button-primary {
-	background-color: #5e72e4 !important;
+	background-color: #ff9fbf !important;
 }
 .button-primary:active {
 	box-shadow: none !important;
@@ -151,4 +151,8 @@ p.submit {
 	letter-spacing: 1px;
 	opacity: .6;
 	text-decoration: none;
+}
+
+#language-switcher {
+	box-shadow: none !important;
 }

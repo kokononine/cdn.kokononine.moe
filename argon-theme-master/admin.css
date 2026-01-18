@@ -399,7 +399,7 @@ textarea {
 .wp-core-ui .button-primary.active:focus,
 .wp-core-ui .button-primary.active:hover,
 .wp-core-ui .button-primary:active {
-    background: #324cdd;
+    background: #ff9fbf;
 }
 
 .comment-ays,
@@ -592,4 +592,8 @@ textarea:focus {
 
 input[type="checkbox"]:checked::before {
     filter: hue-rotate(30deg) brightness(1.1);
+}
+
+#dashboard_quick_press #save-post{
+    margin-bottom: 10px !important;
 }
