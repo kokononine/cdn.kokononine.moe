@@ -1,3 +1,3 @@
-if (document.querySelector("#banner_logo_kokononine") === null) {
-    document.querySelector("#banner_container > :first-child").insertAdjacentHTML("afterbegin", '<img src="//cdn.kokononine.moe/pictures/kokononine.svg" alt="kokononine" id="banner_logo_kokononine" style="width: 570px; height: 90px; display: block; margin-left: auto; margin-right: auto; max-width: 100%;">');
+if (document.querySelector("wp-theme-argon-theme-master") !== null && document.querySelector("#banner_logo_kokononine") === null) {
+    document.querySelector("#banner_container > :first-child").insertAdjacentHTML("afterbegin", `<div id="banner_logo_kokononine" class="kokononine-logo" style="display: block; background: url('//cdn.kokononine.moe/pictures/kokononine.svg') center center/100% 100% no-repeat border-box border-box scroll; width: 570px; height: 90px; max-width: 100%; max-height: 100%; margin-top: 0px; margin-bottom: 0px; margin-left: auto; margin-right: auto;"></div>`);
 }

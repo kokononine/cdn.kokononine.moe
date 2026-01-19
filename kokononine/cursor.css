@@ -21,3 +21,7 @@ progress,
 textarea {
     cursor: url('//cdn.kokononine.moe/pictures/miku-cursor-snooze.png'), auto !important;
 }
+
+::selection {
+    background-color: #ff9fbf3f;
+}

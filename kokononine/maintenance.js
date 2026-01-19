@@ -1,4 +1,4 @@
-if (document.querySelector(".maintenance-notice") == null && window.sessionStorage.getItem("maintenance-notice-dismissed") != "true") {
+if (document.querySelector(".maintenance-notice") === null && window.sessionStorage.getItem("maintenance-notice-dismissed") != "true") {
     $("body").append(`
 <div class="maintenance-notice">
     <div class="maintenance-notice-inner">

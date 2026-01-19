@@ -68,6 +68,12 @@
             ]
         },
         {
+            "selector": ".kokononine-logo",
+            "text": [
+                "是最可爱 kokononine 酱的说喵呜ねぷ～(≧▽≦)～三倍 ice cream～"
+            ]
+        },
+        {
             "selector": ".kokononine-blog-links-home",
             "text": [
                 "可以点击这里前往首页的说喵呜ねぷ～(｡･ω･｡)～想回到上一页可以使用浏览器的后退功能的说喵呜ねぷ～",

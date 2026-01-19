@@ -1,6 +1,38 @@
-body {
-	background: linear-gradient(150deg,#ff9fbf 15%,#ffccdd 70%,#9fffff 94%);
+@import url("//cdn.kokononine.moe/kokononine/cursor.css");
+@import url("//cdn.kokononine.moe/kokononine/font.css");
+@import url("//cdn.kokononine.moe/kokononine/classes.css");
+
+::selection {
+	background-color: #ff9fbf3f;
 }
+body::before {
+	content: "";
+	display: block;
+	background: url("//cdn.kokononine.moe/pictures/kokononine.svg") center no-repeat;
+	background-size: 100% 100%;
+	height: 90px;
+	width: 570px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5vh;
+	margin-bottom: -5vw;
+}
+
+body {
+	background: repeating-linear-gradient(150deg, #ffffff 0%, #ffe5ee 12.5%, #ffffff 25%) no-repeat fixed;
+	background-size: 200% 200%;
+	animation: background-repeating-linear-gradient 8s infinite linear;
+}
+@keyframes background-repeating-linear-gradient {
+	0% {
+		background-position: 100% 100%;
+	}
+	100% {
+		background-position: 0% 0%;
+	}
+}
+
 .login h1 {
 	display: none;
 }
@@ -120,10 +152,12 @@ p.submit {
 	float: none;
 }
 .login #backtoblog a, .login #nav a {
-	color: #fff !important;
+	color: #ff7faa !important;
 	font-size: 15px;
 	letter-spacing: 1px !important;
 	box-shadow: none;
+	font-weight: 700;
+	text-shadow: #ffffffff 3px 3px 3px, #ffffffff -3px -3px 3px;
 }
 .login #backtoblog, .login #nav {
 	text-align: center;
@@ -146,13 +180,34 @@ p.submit {
 }
 
 .login .privacy-policy-page-link .privacy-policy-link {
-	color: white;
+	color: #ff7faa !important;
 	font-size: 14px;
 	letter-spacing: 1px;
-	opacity: .6;
+	opacity: 1;
 	text-decoration: none;
+	font-weight: 700;
+	text-shadow: #ffffffff 3px 3px 3px, #ffffffff -3px -3px 3px;
 }
 
 #language-switcher {
 	box-shadow: none !important;
+}
+
+#language-switcher .dashicons-translation {
+	color: #ff7faa !important;
+}
+
+#language-switcher select {
+	border: none !important;
+	box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07) !important;
+	background-color: #ffffff !important;
+	color: #ff7faa !important;
+}
+
+#language-switcher .button {
+	margin-top: 1px !important;
+	border: none !important;
+	box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07) !important;
+	background-color: #ffffff !important;
+	color: #ff7faa !important;
 }

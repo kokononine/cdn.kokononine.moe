@@ -1982,9 +1982,9 @@ html.filter-grayscale {
 }
 .post-meta-detail-tag-devide {
 	display: inline-block;
-	margin-left: -6px;
-	opacity: 0;
 	user-select: none;
+	font-size: 0px;
+	opacity: 0;
 }
 .additional-content-after-post + .post-tags {
 	margin-top: 25px;
@@ -4490,7 +4490,7 @@ code[hljs-codeblock-inner] {
 	padding-right: 12px !important;
 	position: sticky;
 	left: 0px;
-	width: 30px;
+	min-width: 30px;
 	overflow-x: visible !important;
 	white-space: nowrap;
 	transition: all 0.3s ease;
@@ -4571,12 +4571,13 @@ pre.hljs-codeblock.hljs-codeblock-fullscreen:before {
 	}
 }
 pre.hljs-codeblock.hljs-hide-linenumber .hljs-ln-numbers.hljs {
-	width: 30px;
+	min-width: 0px;
+	max-width: 0px;
 	opacity: 0;
+	display: none;
 }
 pre.hljs-codeblock.hljs-hide-linenumber .hljs-ln-code {
-	padding-left: 0px !important;
-	transform: translateX(-30px);
+	padding-left: 4px !important;
 }
 pre.hljs-codeblock .hljs-control {
 	display: block;

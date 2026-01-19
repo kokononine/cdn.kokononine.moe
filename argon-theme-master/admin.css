@@ -1,3 +1,9 @@
+@import url("//cdn.kokononine.moe/kokononine/cursor.css");
+@import url("//cdn.kokononine.moe/kokononine/font.css");
+@import url("//cdn.kokononine.moe/kokononine/classes.css");
+::selection {
+	background-color: #ff9fbf3f;
+}
 :root {
 	--themecolor: #5e72e4;
 	--themecolor-R: 94;
