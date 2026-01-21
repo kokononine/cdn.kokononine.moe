@@ -8,8 +8,7 @@
 body::before {
 	content: "";
 	display: block;
-	background: url("//cdn.kokononine.moe/pictures/kokononine.svg") center no-repeat;
-	background-size: 100% 100%;
+	background: url("//cdn.kokononine.moe/pictures/kokononine.svg") center center/100% 100% no-repeat border-box border-box scroll;
 	height: 90px;
 	width: 570px;
 	max-width: 100%;
@@ -20,9 +19,9 @@ body::before {
 }
 
 body {
-	background: repeating-linear-gradient(150deg, #ffffff 0%, #ffe5ee 12.5%, #ffffff 25%) no-repeat fixed;
-	background-size: 200% 200%;
-	animation: background-repeating-linear-gradient 8s infinite linear;
+	/* background: linear-gradient(150deg,#7795f8 15%,#6772e5 70%,#555abf 94%); */
+	background: repeating-linear-gradient(150deg, #ffffff 0%, #ffe5ee 12.5%, #ffffff 25%) 100% 100%/200% 200% no-repeat border-box border-box fixed;
+	animation: background-repeating-linear-gradient 8s linear infinite;
 }
 @keyframes background-repeating-linear-gradient {
 	0% {
@@ -72,6 +71,7 @@ body {
 	font-size: 16px;
 }
 .login .button.wp-hide-pw {
+	/* color: #5e72e4; */
 	color: #ff9fbf;
 	height: 100%;
 	border: none;
@@ -100,6 +100,8 @@ input[type=checkbox] {
 }
 input[type=checkbox]:checked:before {
 	color: #fff;
+	/* border-color: #5e72e4; */
+	/* background-color: #5e72e4; */
 	border-color: #ff9fbf;
 	background-color: #ff9fbf;
 }
@@ -133,6 +135,7 @@ input[type=checkbox] + label {
 	border: none !important;
 }
 .button-primary {
+	/* background-color: #5e72e4 !important; */
 	background-color: #ff9fbf !important;
 }
 .button-primary:active {
@@ -152,6 +155,7 @@ p.submit {
 	float: none;
 }
 .login #backtoblog a, .login #nav a {
+	/* color: #fff !important; */
 	color: #ff7faa !important;
 	font-size: 15px;
 	letter-spacing: 1px !important;
@@ -180,9 +184,11 @@ p.submit {
 }
 
 .login .privacy-policy-page-link .privacy-policy-link {
+	/* color: white; */
 	color: #ff7faa !important;
 	font-size: 14px;
 	letter-spacing: 1px;
+	/* opacity: .6; */
 	opacity: 1;
 	text-decoration: none;
 	font-weight: 700;

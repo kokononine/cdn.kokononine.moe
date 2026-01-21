@@ -405,6 +405,7 @@ textarea {
 .wp-core-ui .button-primary.active:focus,
 .wp-core-ui .button-primary.active:hover,
 .wp-core-ui .button-primary:active {
+    /* background: #324cdd; */
     background: #ff9fbf;
 }
 

@@ -4488,6 +4488,9 @@ code[hljs-codeblock-inner] {
 	text-align: center;
 	vertical-align: top;
 	padding-right: 12px !important;
+	/* position: absolute; */
+	/* left: 20px; */
+	/* width: 30px; */
 	position: sticky;
 	left: 0px;
 	min-width: 30px;
@@ -4507,6 +4510,7 @@ pre.hljs-codeblock.hljs-transparent-linenumber .hljs-ln-numbers {
 	background: transparent !important;
 }
 .hljs-ln-code {
+	/* padding-left: 30px !important; */
 	padding-left: 0px !important;
 	transition: all 0.3s ease;
 }
@@ -4571,6 +4575,7 @@ pre.hljs-codeblock.hljs-codeblock-fullscreen:before {
 	}
 }
 pre.hljs-codeblock.hljs-hide-linenumber .hljs-ln-numbers.hljs {
+	/* width: 0px; */
 	min-width: 0px;
 	max-width: 0px;
 	opacity: 0;

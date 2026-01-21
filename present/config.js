@@ -3,10 +3,10 @@
     var feedPath = "//kokononine.moe/feed.php";
     var bgArr = [
         {
-            "url": "//cdn.kokononine.moe/pictures/background_light.jpg",
+            "url": "//cdn.kokononine.moe/pictures/background_light.avif",
             "thumb": ""
         }, {
-            "url": "//cdn.kokononine.moe/pictures/background_black.jpg",
+            "url": "//cdn.kokononine.moe/pictures/background_black.avif",
             "thumb": ""
         }/*, {
             "url": "static/img/background-1.jpg",
