@@ -1,4 +1,4 @@
-<article class="post card bg-white shadow-sm border-0 <?php if (get_option('argon_enable_into_article_animation') == 'true'){echo 'post-preview';} ?> post-preview-layout-3" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article class="post card bg-white shadow-sm border-0 <?php if (get_option('argon_enable_into_article_animation') == 'true'){echo 'post-preview';} ?> post-preview-layout-3 <?php echo implode(' ', get_post_class()); ?>" id="post-<?php the_ID(); ?>">
 		<?php
 			if (argon_has_post_thumbnail()){
 				echo "<header class='post-header post-header-with-thumbnail'>";

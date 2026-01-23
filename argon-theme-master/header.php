@@ -247,7 +247,6 @@
 	<?php }else if (get_option('argon_enable_smoothscroll_type') != 'disabled'){?>
 		<script src="<?php echo $GLOBALS['assets_path']; ?>/assets/vendor/smoothscroll/smoothscroll1.js"></script>
 	<?php }?>
-</head>
 
 <?php echo get_option('argon_custom_html_head'); ?>
 
@@ -272,6 +271,7 @@
 		--card-radius: <?php echo $cardradius; ?>px;
 	}
 </style>
+</head>
 
 <body <?php body_class(); ?>>
 <?php /*wp_body_open();*/ ?>
@@ -404,6 +404,7 @@
 <!--Banner-->
 <section id="banner" class="banner section section-lg section-shaped">
 	<div class="shape <?php echo get_option('argon_banner_background_hide_shapes') == 'true' ? '' : 'shape-style-1' ?> <?php echo get_option('argon_banner_background_color_type') == '' ? 'shape-primary' : get_option('argon_banner_background_color_type'); ?>">
+		<span></span>
 		<span></span>
 		<span></span>
 		<span></span>

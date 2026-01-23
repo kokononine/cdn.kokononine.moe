@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
 	require(preg_replace('/wp-content(.*?)$/', '', dirname( __FILE__ )) . 'wp-blog-header.php');
 	header('HTTP/1.1 200 OK');
@@ -34,18 +35,22 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-	<link href="<?php bloginfo('template_url'); ?>/assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
-	<link href="<?php bloginfo('template_url'); ?>/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-	<link type="text/css" href="<?php bloginfo('template_url'); ?>/assets/css/argon.min.css" rel="stylesheet">
-	<script src="<?php bloginfo('template_url'); ?>/assets/vendor/jquery/jquery.min.js"></script>
-	<script src="<?php bloginfo('template_url'); ?>/assets/vendor/bootstrap/bootstrap.min.js"></script>
-	<script src="<?php bloginfo('template_url'); ?>/assets/js/argon.min.js"></script>
+	<link href="<?php echo $GLOBALS['assets_path']; ?>/assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+	<link href="<?php echo $GLOBALS['assets_path']; ?>/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link type="text/css" href="<?php echo $GLOBALS['assets_path']; ?>/assets/css/argon.min.css" rel="stylesheet">
+	<script src="<?php echo $GLOBALS['assets_path']; ?>/assets/vendor/jquery/jquery.min.js"></script>
+	<script src="<?php echo $GLOBALS['assets_path']; ?>/assets/vendor/bootstrap/bootstrap.min.js"></script>
+	<script src="<?php echo $GLOBALS['assets_path']; ?>/assets/js/argon.min.js"></script>
 	<title><?php echo $page_title; ?></title>
+	<link rel="stylesheet" href="//cdn.kokononine.moe/kokononine/cursor.css">
+	<link rel="stylesheet" href="//cdn.kokononine.moe/kokononine/font.css">
+	<link rel="stylesheet" href="//cdn.kokononine.moe/kokononine/classes.css">
 </head>
 <body>
 	<div class="position-relative">
 		<section class="section section-lg section-shaped pb-250" style="height: 100vh !important;">
-			<div class="shape shape-style-1 shape-default">
+			<div class="shape shape-style-1 shape-default" style="background: repeating-linear-gradient(150deg, #ffffff 0%, #ffe5ee 12.5%, #ffffff 25%) 100% 100%/200% 200% no-repeat border-box border-box fixed; animation: background-repeating-linear-gradient 8s linear infinite;">
+				<span></span>
 				<span></span>
 				<span></span>
 				<span></span>
@@ -57,14 +62,11 @@
 				<span></span>
 			</div>
 			<div class="card main-card shadow">
-				<div class="display-3 text-black"><?php echo $title; ?></div>
-				<p class="lead text-black"><?php echo $info; ?></p>
+				<div class="display-3 text-black" style="color: #ff7faa !important;"><?php echo $title; ?></div>
+				<p class="lead text-black" style="color: #ff7faa !important;"><?php echo $info; ?></p>
 			</div>
 		</section>
 	</div>
-</body>
-</html>
-
 <style>
 	body{
 		overflow: hidden;
@@ -79,4 +81,14 @@
 		top: 50vh;
 		transform: translate(-50% , calc(-50% - 60px));
 	}
+	@keyframes background-repeating-linear-gradient {
+		0% {
+			background-position: 100% 100%;
+		}
+		100% {
+			background-position: 0% 0%;
+		}
+	}
 </style>
+</body>
+</html>

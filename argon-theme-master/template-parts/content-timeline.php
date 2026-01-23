@@ -1,4 +1,4 @@
-<article class="post post-full card bg-white shadow-sm border-0" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article class="post post-full card bg-white shadow-sm border-0 <?php echo implode(' ', get_post_class()); ?>" id="post-<?php the_ID(); ?>">
 	<header class="post-header text-center<?php if (argon_has_post_thumbnail() && get_option('argon_show_thumbnail_in_banner_in_content_page') != 'true'){echo " post-header-with-thumbnail";}?>">
 		<?php
 			if (argon_has_post_thumbnail() && get_option('argon_show_thumbnail_in_banner_in_content_page') != 'true'){
@@ -114,8 +114,11 @@
 			<i class="fa fa-tags" aria-hidden="true"></i>
 			<?php
 				$tags = get_the_tags();
-				foreach ($tags as $tag) {
+				foreach ($tags as $index => $tag) {
 					echo "<a href='" . get_category_link($tag -> term_id) . "' target='_blank' class='tag badge badge-secondary post-meta-detail-tag'>" . $tag -> name . "</a>";
+					if ($index != count($tags) - 1){
+						echo '<div class="post-meta-detail-tag-devide">|</div>';
+					}
 				}
 			?>
 		</div>

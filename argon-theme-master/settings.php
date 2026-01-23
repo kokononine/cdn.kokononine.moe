@@ -49,7 +49,7 @@ function themeoptions_page(){
 					<tr>
 						<th><label><?php _e("主题颜色", 'argon');?></label></th>
 						<td>
-							<input type="color" class="regular-text" name="argon_theme_color" value="<?php echo get_option('argon_theme_color') == "" ? "#5e72e4" : get_option('argon_theme_color'); ?>" style="height:40px;width: 80px;cursor: pointer;"/>
+							<input type="color" class="regular-text" name="argon_theme_color" value="<?php echo get_option('argon_theme_color') == "" ? "#5e72e4" : get_option('argon_theme_color'); ?>" style="height: 40px;width: 80px;cursor: pointer;"/>
 							<input type="text" readonly name="argon_theme_color_hex_preview" value="<?php echo get_option('argon_theme_color') == "" ? "#5e72e4" : get_option('argon_theme_color'); ?>" style="height: 40px;width: 80px;vertical-align: bottom;background: #fff;cursor: pointer;" onclick="$('input[name=\'argon_theme_color\']').click()"/></p>
 							<p class="description"><div style="margin-top: 15px;"><?php _e("选择预置颜色 或", 'argon');?> <span onclick="$('input[name=\'argon_theme_color\']').click()" style="text-decoration: underline;cursor: pointer;"><?php _e("自定义色值", 'argon');?></span>
 								<br/><br/><?php _e("预置颜色：", 'argon');?></div>
@@ -523,14 +523,14 @@ function themeoptions_page(){
 					<tr>
 						<th><label><?php _e('左侧栏作者名称', 'argon');?></label></th>
 						<td>
-							<input type="text" class="regular-text" name="argon_sidebar_auther_name" value="<?php echo get_option('argon_sidebar_auther_name'); ?>"/>
+							<input type="text" class="regular-text" name="argon_sidebar_author_name" value="<?php echo get_option('argon_sidebar_author_name'); ?>"/>
 							<p class="description"><?php _e('留空则显示博客名', 'argon');?></p>
 						</td>
 					</tr>
 					<tr>
 						<th><label><?php _e('左侧栏作者头像地址', 'argon');?></label></th>
 						<td>
-							<input type="text" class="regular-text" name="argon_sidebar_auther_image" value="<?php echo get_option('argon_sidebar_auther_image'); ?>"/>
+							<input type="text" class="regular-text" name="argon_sidebar_author_image" value="<?php echo get_option('argon_sidebar_author_image'); ?>"/>
 							<p class="description"><?php _e('需带上 http(s) 开头', 'argon');?></p>
 						</td>
 					</tr>
@@ -2122,8 +2122,8 @@ function argon_update_themeoptions(){
 		argon_update_option('argon_toolbar_title');
 		argon_update_option('argon_sidebar_banner_title');
 		argon_update_option('argon_sidebar_banner_subtitle');
-		argon_update_option('argon_sidebar_auther_name');
-		argon_update_option('argon_sidebar_auther_image');
+		argon_update_option('argon_sidebar_author_name');
+		argon_update_option('argon_sidebar_author_image');
 		argon_update_option('argon_sidebar_author_description');
 		argon_update_option('argon_banner_title');
 		argon_update_option('argon_banner_subtitle');

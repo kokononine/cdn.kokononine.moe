@@ -2,13 +2,10 @@
 @import url("//cdn.kokononine.moe/kokononine/font.css");
 @import url("//cdn.kokononine.moe/kokononine/classes.css");
 
-::selection {
-	background-color: #ff9fbf3f;
-}
 body::before {
 	content: "";
 	display: block;
-	background: url("//cdn.kokononine.moe/pictures/kokononine.svg") center center/100% 100% no-repeat border-box border-box scroll;
+	background: transparent url("//cdn.kokononine.moe/pictures/kokononine.svg") center center/100% 100% no-repeat border-box border-box scroll;
 	height: 90px;
 	width: 570px;
 	max-width: 100%;
@@ -20,9 +17,10 @@ body::before {
 
 body {
 	/* background: linear-gradient(150deg,#7795f8 15%,#6772e5 70%,#555abf 94%); */
-	background: repeating-linear-gradient(150deg, #ffffff 0%, #ffe5ee 12.5%, #ffffff 25%) 100% 100%/200% 200% no-repeat border-box border-box fixed;
+	background: transparent repeating-linear-gradient(150deg, #ffffff 0%, #ffe5ee 12.5%, #ffffff 25%) 100% 100%/200% 200% no-repeat border-box border-box fixed;
 	animation: background-repeating-linear-gradient 8s linear infinite;
 }
+
 @keyframes background-repeating-linear-gradient {
 	0% {
 		background-position: 100% 100%;

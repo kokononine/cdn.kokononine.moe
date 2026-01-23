@@ -759,7 +759,7 @@ if (argonConfig.waterflow_columns != "1") {
 		$("#post_comment_reply_name").html($("#comment-" + commentID + " .comment-item-title > .comment-name")[0].innerHTML);
 		let preview = $("#comment-" + commentID + " .comment-item-text")[0].innerHTML;
 		if ($("#comment-" + commentID + " .comment-item-source")[0].innerHTML != ''){
-			preview = $("#comment-" + commentID + " .comment-item-source")[0].innerHTML.replace(/\n/g, "</br>");
+			preview = $("#comment-" + commentID + " .comment-item-source")[0].innerHTML.replace(/\n/g, "<br/>");
 		}
 		$("#post_comment_reply_preview").html(preview);
 		if ($("#comment-" + commentID + " .comment-item-title .badge-private-comment").length > 0){
@@ -982,22 +982,22 @@ if (argonConfig.waterflow_columns != "1") {
 		//检查表单合法性
 		if (commentContent.match(/^\s*$/)){
 			isError = true;
-			errorMsg += __("评论内容不能为空") + "</br>";
+			errorMsg += __("评论内容不能为空") + "<br/>";
 		}
 		if (!$("#post_comment").hasClass("no-need-name-email")){
 			if (commentName.match(/^\s*$/)){
 				isError = true;
-				errorMsg += __("昵称不能为空") + "</br>";
+				errorMsg += __("昵称不能为空") + "<br/>";
 			}
 			if ($("#post_comment").hasClass("enable-qq-avatar")){
 				if (!(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/).test(commentEmail) && !(/^[1-9][0-9]{4,10}$/).test(commentEmail)){
 					isError = true;
-					errorMsg += __("邮箱或 QQ 号格式错误") + "</br>";
+					errorMsg += __("邮箱或 QQ 号格式错误") + "<br/>";
 				}
 			}else{
 				if (!(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/).test(commentEmail)){
 					isError = true;
-					errorMsg += __("邮箱格式错误") + "</br>";
+					errorMsg += __("邮箱格式错误") + "<br/>";
 				}
 			}
 		}else{
@@ -1005,19 +1005,19 @@ if (argonConfig.waterflow_columns != "1") {
 				if ($("#post_comment").hasClass("enable-qq-avatar")){
 					if (!(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/).test(commentEmail) && !(/^[1-9][0-9]{4,10}$/).test(commentEmail)){
 						isError = true;
-						errorMsg += __("邮箱或 QQ 号格式错误") + "</br>";
+						errorMsg += __("邮箱或 QQ 号格式错误") + "<br/>";
 					}
 				}else{
 					if (!(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/).test(commentEmail)){
 						isError = true;
-						errorMsg += __("邮箱格式错误") + "</br>";
+						errorMsg += __("邮箱格式错误") + "<br/>";
 					}
 				}
 			}
 		}
 		if (commentLink != "" && !(/https?:\/\//).test(commentLink)){
 			isError = true;
-			errorMsg += __("网站格式错误 (不是 http(s):// 开头)") + "</br>";
+			errorMsg += __("网站格式错误 (不是 http(s):// 开头)") + "<br/>";
 		}
 		if (!$("#post_comment").hasClass("no-need-captcha")){
 			if (commentCaptcha == ""){
@@ -1215,7 +1215,7 @@ if (argonConfig.waterflow_columns != "1") {
 		let errorMsg = "";
 		if (commentContent.match(/^\s*$/)){
 			isError = true;
-			errorMsg += __("评论内容不能为空") + "</br>";
+			errorMsg += __("评论内容不能为空") + "<br/>";
 		}
 		if (isError){
 			iziToast.show({

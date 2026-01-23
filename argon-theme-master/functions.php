@@ -331,7 +331,7 @@ function get_additional_content_after_post(){
 	if ($res == ""){
 		$res = get_option("argon_additional_content_after_post");
 	}
-	$res = str_replace("\n", "</br>", $res);
+	$res = str_replace("\n", "<br/>", $res);
 	$res = str_replace("%url%", get_permalink($postID), $res);
 	$res = str_replace("%link%", '<a href="' . get_permalink($postID) . '" target="_blank">' . get_permalink($postID) . '</a>', $res);
 	$res = str_replace("%title%", get_the_title(), $res);
@@ -704,7 +704,7 @@ function get_article_meta($type){
 function get_article_reading_time_meta($post_content_full){
 	$post_content_full = apply_filters("argon_html_before_wordcount", $post_content_full);
 	$words = get_article_words($post_content_full);
-	$res = '</br><div class="post-meta-detail post-meta-detail-words post-meta-detail-wordcount">
+	$res = '<br/><div class="post-meta-detail post-meta-detail-words post-meta-detail-wordcount">
 		<i class="fa fa-file-word-o" aria-hidden="true"></i>';
 	if ($words['code'] > 0){
 		$res .= '<span title="' . sprintf(__( '包含 %d 行代码', 'argon'), $words['code']) . '">';
@@ -921,7 +921,7 @@ function get_comment_edit_history(){
 						" . ($edition -> isfirst ? "<span class='badge badge-primary badge-admin'>" . __("最初版本", 'argon') . "</span>" : "") . "
 					</div>
 					<div class='comment-edit-history-time'>" . date('Y-m-d H:i:s', $edition -> time) . "</div>
-					<div class='comment-edit-history-content'>" . str_replace("\n", "</br>", $edition -> content) . "</div>
+					<div class='comment-edit-history-content'>" . str_replace("\n", "<br/>", $edition -> content) . "</div>
 				</div>";
 	}
 	exit(json_encode(array(
@@ -2422,7 +2422,7 @@ function shortcode_content_preprocess($attr, $content = ""){
 }
 add_shortcode('br','shortcode_br');
 function shortcode_br($attr,$content=""){
-	return "</br>";
+	return "<br/>";
 }
 add_shortcode('label','shortcode_label');
 function shortcode_label($attr,$content=""){
@@ -2800,7 +2800,7 @@ function shortcode_timeline($attr,$content=""){
 	$out = "<div class='argon-timeline'>";
 	foreach($entries as $index => $value){
 		$now = explode("|" , $value);
-		$now[0] = str_replace("/" , "</br>" , $now[0]);
+		$now[0] = str_replace("/" , "<br/>" , $now[0]);
 		$out .= "<div class='argon-timeline-node'>
 					<div class='argon-timeline-time'>" . $now[0] . "</div>
 					<div class='argon-timeline-card card bg-gradient-secondary shadow-sm'>";
@@ -2813,7 +2813,7 @@ function shortcode_timeline($attr,$content=""){
 				continue;
 			}
 			if ($index > 2){
-				$out .= "</br>";
+				$out .= "<br/>";
 			}
 			$out .= $value;
 		}
@@ -2968,7 +2968,7 @@ function shortcode_ref($attr,$content=""){
 	global $post_reference_contents_first_index;
 	$content = preg_replace(
 		'/<p>(.*?)<\/p>/is',
-		'</br>$1',
+		'<br/>$1',
 		$content
 	);
 	$content = wp_kses($content, array(
