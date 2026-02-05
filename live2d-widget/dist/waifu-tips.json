@@ -193,7 +193,7 @@
         {
             "selector": ".post-title , .archive-timeline-title > a",
             "text": [
-                "要来看看 <span>{text}</span> 这篇文章嘛(つ≧▽≦)つ～"
+                "要来看看 <span>{text}</span> 这篇文章嘛～(つ≧▽≦)つ"
             ]
         },
         {
@@ -550,17 +550,29 @@
         {
             "selector": ".post-navigation-pre",
             "text": [
-                "来看看下一篇文章叭喵～",
-                "点它可以看下一篇文章哦！",
-                "要翻到下一篇文章嘛～"
+                "来看看上一篇文章 <span>{text}</span> 叭喵～",
+                "点它可以看上一篇文章 <span>{text}</span> 哦！",
+                "要翻到上一篇 <span>{text}</span> 文章嘛～"
             ]
         },
         {
             "selector": ".post-navigation-next",
             "text": [
-                "来看看上一篇文章叭喵～",
-                "点它可以看上一篇文章哦！",
-                "要翻到上一篇文章嘛～"
+                "来看看下一篇文章 <span>{text}</span> 叭喵～",
+                "点它可以看下一篇文章 <span>{text}</span> 哦！",
+                "要翻到下一篇文章 <span>{text}</span> 嘛～"
+            ]
+        },
+        {
+            "selector": ".related-posts",
+            "text": [
+                "这里有更多的相关内容的说喵呜ねぷ～"
+            ]
+        },
+        {
+            "selector": ".related-post-card-container",
+            "text": [
+                "来看看 <span>{text}</span> 这篇文章叭喵呜～(つ≧▽≦)つ"
             ]
         },
         {

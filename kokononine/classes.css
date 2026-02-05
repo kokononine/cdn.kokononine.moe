@@ -6,6 +6,7 @@
     position: relative;
     display: inline-block;
     pointer-events: auto;
+    cursor: pointer;
 }
 
 .kokononine-spoiler-mask::after {
@@ -21,16 +22,16 @@
     transition: opacity var(--kokononine-spoiler-mask-delay, 0.5s) ease;
 }
 
-.kokononine-spoiler-mask:hover::after {
+.kokononine-spoiler-mask::after:hover {
     opacity: 0;
 }
 
 .kokononine-spoiler-text {
     background-color: var(--kokononine-spoiler-text-color, var(--kokononine-color, #ff9fbf));
     color: var(--kokononine-spoiler-text-color, var(--kokononine-color, #ff9fbf));
-    cursor: pointer;
     transition: all var(--kokononine-spoiler-text-delay, 0.5s) ease;
     pointer-events: auto;
+    cursor: pointer;
 }
 
 .kokononine-spoiler-text:hover {
@@ -43,10 +44,11 @@
     opacity: 0.5;
     transition: all var(--kokononine-spoiler-blur-delay, 0.5s) ease;
     pointer-events: auto;
+    cursor: pointer;
 }
 
 .kokononine-spoiler-blur:hover {
-    filter: none;
+    filter: blur(0px);
     opacity: 1;
 }
 
