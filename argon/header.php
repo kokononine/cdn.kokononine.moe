@@ -2,51 +2,51 @@
 <?php
 	$htmlclasses = "";
 	if (get_option('argon_page_layout') == "single"){
-		$htmlclasses .= "single-column ";
+		$htmlclasses .= " single-column";
 	}
 	if (get_option('argon_page_layout') == "triple"){
-		$htmlclasses .= "triple-column ";
+		$htmlclasses .= " triple-column";
 	}
 	if (get_option('argon_page_layout') == "double-reverse"){
-		$htmlclasses .= "double-column-reverse ";
+		$htmlclasses .= " double-column-reverse";
 	}
 	if (get_option('argon_enable_immersion_color') == "true"){
-		$htmlclasses .= "immersion-color ";
+		$htmlclasses .= " immersion-color";
 	}
 	if (get_option('argon_enable_amoled_dark') == "true"){
-		$htmlclasses .= "amoled-dark ";
+		$htmlclasses .= " amoled-dark";
 	}
 	if (get_option('argon_card_shadow') == 'big'){
-		$htmlclasses .= 'use-big-shadow ';
+		$htmlclasses .= ' use-big-shadow';
 	}
 	if (get_option('argon_font') == 'serif'){
-		$htmlclasses .= 'use-serif ';
+		$htmlclasses .= ' use-serif';
 	}
 	if (get_option('argon_disable_codeblock_style') == 'true'){
-		$htmlclasses .= 'disable-codeblock-style ';
+		$htmlclasses .= ' disable-codeblock-style';
 	}
 	if (get_option('argon_enable_headroom') == 'absolute'){
-		$htmlclasses .= 'navbar-absolute ';
+		$htmlclasses .= ' navbar-absolute';
 	}
 	$banner_size = get_option('argon_banner_size', 'full');
 	if ($banner_size != 'full'){
 		if ($banner_size == 'mini'){
-			$htmlclasses .= 'banner-mini ';
+			$htmlclasses .= ' banner-mini';
 		}else if ($banner_size == 'hide'){
-			$htmlclasses .= 'no-banner ';
+			$htmlclasses .= ' no-banner';
 		}else if ($banner_size == 'fullscreen'){
-			$htmlclasses .= 'banner-as-cover ';
+			$htmlclasses .= ' banner-as-cover';
 		}
 	}
 	if (get_option('argon_toolbar_blur', 'false') == 'true'){
-		$htmlclasses .= 'toolbar-blur ';
+		$htmlclasses .= ' toolbar-blur';
 	}
-	$htmlclasses .= get_option('argon_article_header_style', 'article-header-style-default') . ' ';
+	$htmlclasses .= ' ' . get_option('argon_article_header_style', 'article-header-style-default');
 	if(strpos($_SERVER['HTTP_USER_AGENT'], 'Safari') !== false && strpos($_SERVER['HTTP_USER_AGENT'], 'Chrome') === false){
 		$htmlclasses .= ' using-safari';
 	}
 ?>
-<html <?php language_attributes(); ?> class="no-js <?php echo $htmlclasses;?>">
+<html class="no-js<?php echo $htmlclasses;?>" <?php language_attributes(); ?>>
 <?php
 	$themecolor = get_option("argon_theme_color", "#5e72e4");
 	$themecolor_origin = $themecolor;
@@ -74,7 +74,7 @@
 	<?php if (get_option('argon_enable_mobile_scale') != 'true'){ ?>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<?php }else{ ?>
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=9">
 	<?php } ?>
 	<meta property="og:site_name" content="<?php echo get_bloginfo('name');?>">
 	<meta property="og:title" content="<?php echo wp_get_document_title();?>">

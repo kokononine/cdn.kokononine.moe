@@ -479,7 +479,7 @@ function themeoptions_page(){
 					<tr>
 						<th><label><?php _e('Banner 标题打字动画时长', 'argon');?></label></th>
 						<td>
-							<input type="number" name="argon_banner_typing_effect_interval" min="1" max="10000"  value="<?php echo (get_option('argon_banner_typing_effect_interval') == '' ? '100' : get_option('argon_banner_typing_effect_interval')); ?>"/> <?php _e('ms/字', 'argon');?>
+							<input type="number" name="argon_banner_typing_effect_interval" min="1" max="10000" value="<?php echo (get_option('argon_banner_typing_effect_interval') == '' ? '100' : get_option('argon_banner_typing_effect_interval')); ?>"/> <?php _e('ms/字', 'argon');?>
 							<p class="description"></p>
 						</td>
 					</tr>
@@ -694,7 +694,7 @@ function themeoptions_page(){
 					<tr>
 						<th><label><?php _e('每分钟阅读字数（中文）', 'argon');?></label></th>
 						<td>
-							<input type="number" name="argon_reading_speed" min="1" max="5000"  value="<?php echo (get_option('argon_reading_speed') == '' ? '300' : get_option('argon_reading_speed')); ?>"/>
+							<input type="number" name="argon_reading_speed" min="1" max="5000" value="<?php echo (get_option('argon_reading_speed') == '' ? '300' : get_option('argon_reading_speed')); ?>"/>
 							<?php _e('字/分钟', 'argon');?>
 							<p class="description"></p>
 						</td>
@@ -702,14 +702,14 @@ function themeoptions_page(){
 					<tr>
 						<th><label><?php _e('每分钟阅读单词数（英文）', 'argon');?></label></th>
 						<td>
-							<input type="number" name="argon_reading_speed_en" min="1" max="5000"  value="<?php echo (get_option('argon_reading_speed_en') == '' ? '160' : get_option('argon_reading_speed_en')); ?>"/>
+							<input type="number" name="argon_reading_speed_en" min="1" max="5000" value="<?php echo (get_option('argon_reading_speed_en') == '' ? '160' : get_option('argon_reading_speed_en')); ?>"/>
 							<?php _e('单词/分钟', 'argon');?>
 						</td>
 					</tr>
 					<tr>
 						<th><label><?php _e('每分钟阅读代码行数', 'argon');?></label></th>
 						<td>
-							<input type="number" name="argon_reading_speed_code" min="1" max="5000"  value="<?php echo (get_option('argon_reading_speed_code') == '' ? '20' : get_option('argon_reading_speed_code')); ?>"/>
+							<input type="number" name="argon_reading_speed_code" min="1" max="5000" value="<?php echo (get_option('argon_reading_speed_code') == '' ? '20' : get_option('argon_reading_speed_code')); ?>"/>
 							<?php _e('行/分钟', 'argon');?>
 							<p class="description"><?php _e('预计阅读时间由每分钟阅读字数计算', 'argon');?></p>
 						</td>
@@ -892,7 +892,7 @@ function themeoptions_page(){
 								<option value="createdtime" <?php if ($argon_outdated_info_time_type=='createdtime'){echo 'selected';} ?>><?php _e('发布时间', 'argon');?></option>
 							</select>
 							<?php _e('距离现在超过', 'argon');?>
-							<input type="number" name="argon_outdated_info_days" min="-1" max="99999"  value="<?php echo (get_option('argon_outdated_info_days') == '' ? '-1' : get_option('argon_outdated_info_days')); ?>"/>
+							<input type="number" name="argon_outdated_info_days" min="-1" max="99999" value="<?php echo (get_option('argon_outdated_info_days') == '' ? '-1' : get_option('argon_outdated_info_days')); ?>"/>
 							<?php _e('天时，用', 'argon');?>
 							<select name="argon_outdated_info_tip_type">
 								<?php $argon_outdated_info_tip_type = get_option('argon_outdated_info_tip_type'); ?>
@@ -1084,7 +1084,7 @@ function themeoptions_page(){
 					<tr>
 						<th><label><?php _e('提前加载阈值', 'argon');?></label></th>
 						<td>
-							<input type="number" name="argon_lazyload_threshold" min="0" max="2500"  value="<?php echo (get_option('argon_lazyload_threshold') == '' ? '800' : get_option('argon_lazyload_threshold')); ?>"/>
+							<input type="number" name="argon_lazyload_threshold" min="0" max="2500" value="<?php echo (get_option('argon_lazyload_threshold') == '' ? '800' : get_option('argon_lazyload_threshold')); ?>"/>
 							<p class="description"><?php _e('图片距离页面底部还有多少距离就开始提前加载', 'argon');?></p>
 						</td>
 					</tr>

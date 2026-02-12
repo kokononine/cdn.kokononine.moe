@@ -1,4 +1,5 @@
 <div class="shuoshuo-preview-container shuoshuo-foldable card bg-white shadow-sm border-0 <?php echo implode(' ', get_post_class()); ?>" id="post-<?php the_ID(); ?>">
+	<article>
 		<?php if ( get_the_title() != '' ) : ?>
 			<a class="shuoshuo-title"><?php the_title(); ?></a>
 		<?php endif; ?>
